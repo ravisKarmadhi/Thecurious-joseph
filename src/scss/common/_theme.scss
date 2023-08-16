@@ -1,0 +1,73 @@
+// slick-overflow
+.slick-overflow {
+  overflow: hidden;
+
+  .slick-slider {
+    .slick-list {
+      overflow: visible;
+    }
+  }
+}
+
+// TEXT OVERFLOW CSS
+.text-truncate {
+  -webkit-box-orient: vertical;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.text-truncate2 {
+  -webkit-line-clamp: 2;
+}
+
+.text-truncate3 {
+  -webkit-line-clamp: 3;
+}
+
+.text-truncate4 {
+  -webkit-line-clamp: 4;
+}
+
+.text-truncate5 {
+  -webkit-line-clamp: 5;
+}
+
+.text-truncate6 {
+  -webkit-line-clamp: 6;
+}
+
+.text-truncate8 {
+  -webkit-line-clamp: 8;
+}
+
+// CONTAINER AND ROW CSS
+.container {
+  max-width: 1250px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row {
+  margin-left: -0;
+  margin-right: -0;
+}
+
+.row>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+// FONT FAMILY CSS
+// .axiaReg {
+//   font-family: 'axia-normal';
+// }
+
+.text-truncate-none {
+  @include media-breakpoint-down(lg) {
+    text-overflow: initial !important;
+    -webkit-line-clamp: initial !important;
+  }
+}

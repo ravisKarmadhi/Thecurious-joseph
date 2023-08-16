@@ -1,0 +1,108 @@
+@import 'variables';
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding:0;
+}
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.object-cover {
+  object-fit: cover;
+  object-position: center;
+}
+.list-none {
+  list-style: none;
+}
+// TRANSITION AND TRANSFORM GLOBAL CSS
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+.opacity-1{
+  opacity: 1 !important;
+}
+.rotate-circle{
+  transform: rotate(45deg);
+}
+.rotate-circle-hover{
+  &:hover{
+    transform: rotate(90deg);
+  }
+}
+.rotate-arrow{
+  transform: rotate(-180deg);
+}
+.rotate-circle-nagative{
+  transform: rotate(-90deg);
+}
+// INPUT CSS GLOBAL
+input, textarea{
+  outline: none !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+textarea { resize: none; }
+
+// POSITION GLOBAL CSS
+.p-initial{
+  @include media-breakpoint-down(lg) {
+  position:initial !important;
+  }
+}
+.top-left-center{
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.top-center{
+  top: 50%;
+  transform: translateY(-50%);
+}
+// SCROLLBAR AND SELECTION GLOBAL CSS
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #7e7e7e; 
+}
+::selection {
+  color: $white;
+  background: $black;
+}
+.overflow-y-auto{
+  &::-webkit-scrollbar {
+    display:none !important;
+  }
+}
+.thicknessOne {
+  text-decoration-thickness: 1px;
+}
+.offcanvas{
+  z-index:1;
+}
+
+.offcanvas-backdrop-custom{
+  z-index:99999;
+}
