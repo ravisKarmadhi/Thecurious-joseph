@@ -1,0 +1,21 @@
+.mail-label {
+    transform: translate(450px, 32px);
+
+    .label-group {
+        width: 141px;
+        padding-left:20px;
+        height: 45px;
+        line-height:38px;
+        transform: rotate(90deg);
+
+        .bottomTriangle {
+            left: 2px;
+            bottom: -14px;
+        }
+
+        .triangle-end {
+            top: 8px;
+            right: -20px;
+        }
+    }
+}

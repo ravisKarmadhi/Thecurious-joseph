@@ -16,18 +16,18 @@ fontMS:50px
 fontMM:60px
 fontML:80px
 
-resfonX:10px
-resfonS:12px
-resfonM:14px
-resfonL:16px
-resfonXX:22px
-resfonXS:28px
-resfonXM:30px
-resfonXL:35px
-resfonSX:40px
-resfonSS:45px
-resfonSM:55px
-resfonSL:57px
+resfontX:10px
+resfontS:12px
+resfontM:14px
+resfontL:16px
+resfontXX:22px
+resfontXS:28px
+resfontXM:30px
+resfontXL:35px
+resfontSX:40px
+resfontSS:45px
+resfontSM:55px
+resfontSL:57px
 
 /// LINE HEIGHT ///
 leadingX:24px
@@ -46,16 +46,12 @@ resleadingXM:45px
 resleadingXL:65px
 
 /// FONT FAMILY ///
-sofiaSB:Sofia Pro, Semi Bold
-sofiaB:Sofia Pro, Bold
-sofiaM:Sofia Pro, Medium
-sofiaR: Sofia Pro, Regular
+sofia:Sofia Pro
 bastiaB:Bastia-Bold, Regular
 
 /// LETTER SPACING ///
 spacingX:3px
-
-resspacingX2.5px
+resspacingX:2.5px
 
 /// COLOR ///
 primary:#F8F7F2
@@ -65,5 +61,5 @@ light:#F1F1F1
 golden:#C1A76F
 
 /// RADIUS ///
-borderX:5px
-borderS:10px
+radiusX:5px
+radiusS:10px

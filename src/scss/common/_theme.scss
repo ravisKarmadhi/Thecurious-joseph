@@ -60,10 +60,35 @@
     padding-right: 0;
 }
 
+.rowX {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.rowX>* {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rowS {
+  margin-left: -17.5px;
+  margin-right: -17.5px;
+}
+
+.rowS>* {
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+}
+
 // FONT FAMILY CSS
-// .axiaReg {
-//   font-family: 'axia-normal';
-// }
+.bastiaB {
+  font-family: 'Bastia-Bold';
+}
+
+.sofia{
+  font-family: 'sofia-pro';
+
+}
 
 .text-truncate-none {
   @include media-breakpoint-down(lg) {

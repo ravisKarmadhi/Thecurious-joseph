@@ -6,3 +6,68 @@ button,
     -moz-appearance: none !important;
     -webkit-appearance: none !important;
 }
+
+.btnX {
+    width: 210px;
+    height: 56px;
+}
+
+.hoverBtn {
+    &::after {
+        width: 100%;
+        height: 100%;
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: transparent;
+    }
+    &::before {
+        width: 14px;
+        height: 100%;
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &:hover {
+        color: $primary;
+        &::after {
+            background-color: 100%;
+            animation: example 1s;
+            @keyframes example {
+                from {
+                    width: 14px;
+                }
+
+                to {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.dangerBtn {
+    &:hover {
+        &::after {
+            background-color: $danger;
+        }
+    }
+    &::before {
+        background-color:$danger;
+    }
+}
+
+.secondaryBtn {
+    &:hover {
+        &::after {
+            background-color: $secondary;
+        }
+    }
+    &::before {
+        background-color:$secondary;
+    }
+}

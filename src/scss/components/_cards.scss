@@ -9,3 +9,43 @@
         }
     }
 }
+
+.groupCard{
+    padding:85px 75px 55px 45px;
+    &.bgsecondary{
+        .triangle-end{
+            fill:$secondary;
+        }
+    }
+    &.bgdanger{
+        .triangle-end{
+            fill:$danger;
+        }
+    }
+}
+
+.testimonial-sec{
+    padding-top:240px;
+    padding-bottom:40px;
+    height:705px;
+    .quote{
+        color:$primary;
+        font-size:700px;
+        opacity:0.03;
+        transform: translateY(-180px);
+    }
+    .testimonial-card{
+        .testimonial-img{
+            width:184px;
+            min-width:184px;
+            height:184px;
+            margin-right:66px;
+        }
+    }
+}
+
+.single-blog{
+    .blog-img{
+        height: 254px;
+    }
+}

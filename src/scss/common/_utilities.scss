@@ -1,0 +1,238 @@
+// FONT CSS
+.fontX{
+    font-size:$fontX;
+}
+.fontS{
+    font-size:$fontS;
+}
+.fontM{
+    font-size:$fontM;
+}
+.fontL{
+    font-size:$fontL;
+}
+.fontXX{
+    font-size:$fontXX;
+}
+.fontXS{
+    font-size:$fontXS;
+}
+.fontXM{
+    font-size:$fontXM;
+}
+.fontXL{
+    font-size:$fontXL;
+}
+.fontSX{
+    font-size:$fontSX;
+}
+.fontSS{
+    font-size:$fontSS;
+}
+.fontSM{
+    font-size:$fontSM;
+}
+.fontSL{
+    font-size:$fontSL;
+}
+.fontMX{
+    font-size:$fontMX;
+}
+.fontMS{
+    font-size:$fontMS;
+}
+.fontMM{
+    font-size:$fontMM;
+}
+.fontML{
+    font-size:$fontML;
+}
+
+.resfontX{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontX;
+    }
+}
+
+.resfontS{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontS;
+    }
+}
+
+.resfontM{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontM;
+    }
+}
+
+
+.resfontL{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontL;
+    }
+}
+
+
+.resfontXX{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontXX;
+    }
+}
+
+
+.resfontXS{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontXS;
+    }
+}
+
+
+.resfontXM{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontXM;
+    }
+}
+
+
+.resfontXL{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontXL;
+    }
+}
+
+
+.resfontSX{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontSX;
+    }
+}
+
+.resfontSS{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontSS;
+    }
+}
+
+.resfontSM{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontSM;
+    }
+}
+
+.resfontSL{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontSL;
+    }
+}
+
+// LINE HEIGHT CSS
+
+.leadingX{
+    line-height:$leadingX;
+}
+.leadingS{
+    line-height:$leadingS;
+}
+.leadingM{
+    line-height:$leadingM;
+}
+.leadingL{
+    line-height:$leadingL;
+}
+.leadingXX{
+    line-height:$leadingXX;
+}
+.resleadingX{
+    @include media-breakpoint-down(lg) {
+        line-height:$resleadingX;
+    }
+}
+.resleadingS{
+    @include media-breakpoint-down(lg) {
+        line-height:$resleadingS;
+    }
+}
+.resleadingM{
+    @include media-breakpoint-down(lg) {
+        line-height:$resleadingM;
+    }
+}
+.resleadingL{
+    @include media-breakpoint-down(lg) {
+        line-height:$resleadingL;
+    }
+}
+.resleadingXX{
+    @include media-breakpoint-down(lg) {
+        line-height:$resleadingXX;
+    }
+}
+.resleadingXS{
+    @include media-breakpoint-down(lg) {
+        line-height:$resleadingXS;
+    }
+}
+.resleadingXM{
+    @include media-breakpoint-down(lg) {
+        line-height:$resleadingXM;
+    }
+}
+.resleadingXL{
+    @include media-breakpoint-down(lg) {
+        line-height:$resleadingXL;
+    }
+}
+
+// LETTER SPACING
+.spacingX{
+    letter-spacing:$spacingX;
+}
+.resspacingX{
+    @include media-breakpoint-down(lg) {
+        letter-spacing:$resspacingX;
+    }
+}
+
+// BORDER RADIUS
+.radiusX{
+    border-radius:$radiusX;
+}
+.radiusS{
+    border-radius:$radiusS;
+}
+// COLOR
+.bgprimary{
+    background-color:$primary;
+}
+.bgsecondary{
+    background-color:$secondary;
+}
+.bgdanger{
+    background-color:$danger;
+}
+.bglight{
+    background-color:$light;
+}
+.bggolden{
+    background-color:$golden;
+}
+.textprimary{
+    color:$primary;
+}
+.textsecondary{
+    color:$secondary;
+}
+.textdanger{
+    color:$danger;
+}
+.textlight{
+    color:$light;
+}
+.textgolden{
+    color:$golden;
+}
+// FONT WEIGHT
+.fw-semibold{
+    font-weight:600;
+}
