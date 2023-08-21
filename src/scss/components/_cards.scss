@@ -25,14 +25,15 @@
 }
 
 .testimonial-sec{
-    padding-top:240px;
-    padding-bottom:40px;
-    height:705px;
+  
     .quote{
         color:$primary;
         font-size:700px;
         opacity:0.03;
         transform: translateY(-180px);
+    }
+    .quotesecondary{
+        color:$secondary !important;
     }
     .testimonial-card{
         .testimonial-img{
@@ -47,5 +48,11 @@
 .single-blog{
     .blog-img{
         height: 254px;
+    }
+}
+
+.single-staff{
+    .staff-img{
+        height:355px;
     }
 }

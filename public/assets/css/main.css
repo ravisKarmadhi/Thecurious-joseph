@@ -14568,14 +14568,6 @@ textarea {
   text-decoration-thickness: 1px;
 }
 
-.offcanvas {
-  z-index: 1;
-}
-
-.offcanvas-backdrop-custom {
-  z-index: 99999;
-}
-
 .slick-overflow {
   overflow: hidden;
 }
@@ -15029,7 +15021,7 @@ button,
   bottom: -14px;
 }
 .mail-label .label-group .triangle-end {
-  top: 8px;
+  top: 10px;
   right: -20px;
 }
 
@@ -15051,16 +15043,14 @@ button,
   fill: #D13C3C;
 }
 
-.testimonial-sec {
-  padding-top: 240px;
-  padding-bottom: 40px;
-  height: 705px;
-}
 .testimonial-sec .quote {
   color: #F8F7F2;
   font-size: 700px;
   opacity: 0.03;
   transform: translateY(-180px);
+}
+.testimonial-sec .quotesecondary {
+  color: #1B344E !important;
 }
 .testimonial-sec .testimonial-card .testimonial-img {
   width: 184px;
@@ -15073,19 +15063,43 @@ button,
   height: 254px;
 }
 
-.tour-slider .slick-list {
-  margin: 0 -17.5px;
+.single-staff .staff-img {
+  height: 355px;
+}
+
+.tour-slider .slick-slide {
+  transform: scaleX(0.87) scaleY(0.84);
+  transition: all 0.3s ease-in-out;
+}
+.tour-slider .slick-center {
+  transform: scaleX(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
+.slick-overflow-visible .slick-list {
   overflow: visible;
 }
-.tour-slider .slick-list .slick-slide {
+
+.slider-padding .slick-list {
+  margin: 0 -17.5px;
+}
+.slider-padding .slick-list .slick-slide {
   padding: 0 17.5px;
 }
 
-.slider-blog .slick-list {
-  margin: 0 -17.5px;
+.insta-slider .slick-list {
+  margin: 0 -9.5px;
 }
-.slider-blog .slick-list .slick-slide {
-  padding: 0 17.5px;
+.insta-slider .slick-list .slick-slide {
+  padding: 0 9.5px;
+}
+
+.insta-gallery {
+  padding-bottom: 30px;
+}
+
+.card-size .card-img {
+  height: 580px;
 }
 
 .home-hero {
@@ -15097,11 +15111,17 @@ button,
 }
 
 .testimonial-home {
+  padding-top: 240px;
+  padding-bottom: 40px;
+  height: 705px;
   margin-top: 130px;
 }
 
 .upcoming-tour .slider-img {
-  height: 479px;
+  height: 567px;
+}
+.upcoming-tour .slider-img .layer {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .banner-sec {
@@ -15109,6 +15129,68 @@ button,
 }
 .banner-sec .banner-img {
   height: 373px;
+}
+
+.upcoming-tour-home {
+  padding-top: 110px;
+}
+
+.blog-sec-home {
+  padding-top: 100px;
+  padding-bottom: 85px;
+  margin-top: 80px;
+}
+
+.insta-gallery-home {
+  padding-top: 96px;
+}
+
+.school-hero {
+  height: 730px;
+}
+
+.welcome-pupils {
+  padding-top: 140px;
+  padding-bottom: 170px;
+}
+
+.early-year-sec {
+  padding-top: 90px;
+}
+
+.pre-preparatory-sec {
+  padding-top: 170px;
+}
+
+.preparatory-sec {
+  padding-top: 140px;
+}
+
+.upcoming-tour-school {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 120px;
+}
+
+.staf-slider-sec {
+  padding-top: 125px;
+}
+
+.reports-sec {
+  padding-top: 96px;
+  padding-bottom: 110px;
+  margin-top: 120px;
+}
+.reports-sec .single-reports {
+  height: 83px;
+  margin-bottom: 12px;
+  padding: 0 40px;
+}
+
+.testimonial-sec-school {
+  padding-top: 270px;
+  height: 650px;
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,28 @@
 .tour-slider {
+  
+
+        .slick-slide {
+            transform: scaleX(0.87) scaleY(0.84);   
+            transition: all 0.3s ease-in-out;
+        }
+        .slick-center{
+            transform: scaleX(1.03);
+            transition: all 0.3s ease-in-out;
+        }
+    
+    
+}
+
+.slick-overflow-visible{
+    .slick-list {
+        overflow: visible;
+    }
+}
+
+
+.slider-padding{
     .slick-list {
         margin: 0 -17.5px;
-        overflow: visible;
 
         .slick-slide {
             padding: 0 17.5px;
@@ -9,13 +30,12 @@
     }
 }
 
-
-.slider-blog{
+.insta-slider{
     .slick-list {
-        margin: 0 -17.5px;
+        margin: 0 -9.5px;
 
         .slick-slide {
-            padding: 0 17.5px;
+            padding: 0 9.5px;
         }
     }
 }

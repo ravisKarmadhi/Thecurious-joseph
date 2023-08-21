@@ -26,9 +26,16 @@ export class App {
     });
     
     $('.tour-slider').slick({
-      centerMode: true,
-      centerPadding: '60px',
+      infinite:true,
       slidesToShow: 1,
+      slidesToScroll: 1,
+      speed:500,
+      autoplaySpeed: 5000,
+      autoplay:true,
+      centerMode:true,
+      centerPadding:"0",
+      arrows:false,
+      dots:false,
     });
 
       $('.slider-blog').slick({
@@ -42,6 +49,26 @@ export class App {
       autoplaySpeed: 2000,
       prevArrow: $(".blog-sec .slick--prev"),
       nextArrow: $(".blog-sec .slick--next"),
+    });
+    $('.insta-slider').slick({
+      infinite: true,
+      slidesToShow: 6,
+      dots: false,
+      fade: false,
+      arrows: false,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+    $('.staff-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      dots: false,
+      fade: false,
+      arrows: false,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
     });
   }
   slickSLider() { }

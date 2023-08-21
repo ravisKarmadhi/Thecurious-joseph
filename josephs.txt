@@ -1,3 +1,7 @@
+/// FONT FAMILY ///
+sofia:Sofia Pro
+bastiaB:Bastia-Bold, Regular
+
 /// FONT SIZE ///
 fontX:12px
 fontS:14px
@@ -45,9 +49,7 @@ resleadingXS:40px
 resleadingXM:45px
 resleadingXL:65px
 
-/// FONT FAMILY ///
-sofia:Sofia Pro
-bastiaB:Bastia-Bold, Regular
+
 
 /// LETTER SPACING ///
 spacingX:3px
