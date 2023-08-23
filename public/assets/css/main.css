@@ -14957,6 +14957,11 @@ button,
   height: 56px;
 }
 
+.btnS {
+  width: 220px;
+  height: 56px;
+}
+
 .hoverBtn::after {
   width: 100%;
   height: 100%;
@@ -15106,6 +15111,10 @@ button,
   height: 780px;
 }
 
+.brochures-sec .brochure-img {
+  height: 467px;
+}
+
 .parents-section {
   padding-top: 110px;
 }
@@ -15145,10 +15154,6 @@ button,
   padding-top: 96px;
 }
 
-.school-hero {
-  height: 730px;
-}
-
 .welcome-pupils {
   padding-top: 140px;
   padding-bottom: 170px;
@@ -15176,11 +15181,12 @@ button,
   padding-top: 125px;
 }
 
-.reports-sec {
+.reports-sec-school {
   padding-top: 96px;
   padding-bottom: 110px;
   margin-top: 120px;
 }
+
 .reports-sec .single-reports {
   height: 83px;
   margin-bottom: 12px;
@@ -15191,6 +15197,84 @@ button,
   padding-top: 270px;
   height: 650px;
   padding-bottom: 40px;
+}
+
+.learning-stroke {
+  padding-top: 45px;
+  padding-bottom: 140px;
+}
+
+.early-year-learning {
+  padding-top: 115px;
+}
+
+.early-year-curriculum {
+  margin-top: 145px;
+  height: 610px;
+}
+.early-year-curriculum .top-img {
+  width: 412px;
+  height: 398px;
+}
+.early-year-curriculum .bottom-img {
+  width: 321px;
+  height: 319px;
+  bottom: 70px;
+}
+
+.upcoming-tour-age {
+  padding-top: 120px;
+}
+
+.reports-sec-age {
+  padding-top: 150px;
+  margin-top: 105px;
+  padding-bottom: 150px;
+}
+
+.blog-sec-age {
+  padding-top: 100px;
+  padding-bottom: 85px;
+}
+
+.learn-more-sec {
+  padding-top: 162px;
+}
+
+.brochures-sec-age {
+  margin-top: 160px;
+}
+
+.insta-gallery-age {
+  padding-top: 130px;
+}
+
+.clear-path-sec {
+  padding-top: 125px;
+}
+.clear-path-sec .potential-row {
+  padding-top: 90px;
+}
+.clear-path-sec .potential-row .potential-img {
+  height: 393px;
+}
+
+.why-choose-us {
+  padding-top: 120px;
+}
+
+.facility-club {
+  padding-top: 140px;
+}
+
+.school-policies-sec {
+  padding-top: 145px;
+}
+.school-policies-sec .policies-img {
+  height: 583px;
+}
+.school-policies-sec .policies-card {
+  padding: 105px 90px;
 }
 
 /*# sourceMappingURL=main.css.map */
