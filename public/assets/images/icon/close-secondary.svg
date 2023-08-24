@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 47" width="47" height="47">
+	<title>Path 20362-svg</title>
+	<defs>
+		<image width="16" height="16" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNS41MjgiIGhlaWdodD0iMTUuNTI4IiB2aWV3Qm94PSIwIDAgMTUuNTI4IDE1LjUyOCI+CiAgPGcgaWQ9Ikdyb3VwXzMyNDMiIGRhdGEtbmFtZT0iR3JvdXAgMzI0MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzM1IiBkYXRhLW5hbWU9IlJlY3RhbmdsZSAzNSIgd2lkdGg9IjIwLjI3IiBoZWlnaHQ9IjEuNjg5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDE0LjMzMykgcm90YXRlKC00NSkiIGZpbGw9IiNmZmYiLz4KICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfMzYiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDM2IiB3aWR0aD0iMjAuMjciIGhlaWdodD0iMS42ODkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0LjMzMyAxNS41MjgpIHJvdGF0ZSgtMTM1KSIgZmlsbD0iI2ZmZiIvPgogIDwvZz4KPC9zdmc+Cg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #1b344e } 
+	</style>
+	<path id="Path_20362" class="s0" d="m23.5 0c9.5 0 18.1 5.7 21.7 14.5 3.6 8.8 1.6 18.9-5.1 25.6-6.7 6.7-16.8 8.7-25.6 5.1-8.8-3.6-14.5-12.2-14.5-21.7 0-3.1 0.6-6.1 1.8-9 1.2-2.8 2.9-5.4 5.1-7.6 2.2-2.2 4.8-3.9 7.6-5.1 2.9-1.2 5.9-1.8 9-1.8z"/>
+	<use id="Group 3243" href="#img1" transform="matrix(1,0,0,1,16,16)"/>
+</svg>

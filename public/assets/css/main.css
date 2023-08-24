@@ -15072,6 +15072,24 @@ button,
   height: 355px;
 }
 
+.potential-img {
+  height: 393px;
+}
+
+.extraactivities-canvas {
+  width: 631px !important;
+}
+.extraactivities-canvas .close-btn {
+  top: 38px;
+  right: 38px;
+}
+.extraactivities-canvas .extra-activities-img {
+  height: 338px;
+}
+.extraactivities-canvas .canvas-content {
+  padding: 50px 61px;
+}
+
 .tour-slider .slick-slide {
   transform: scaleX(0.87) scaleY(0.84);
   transition: all 0.3s ease-in-out;
@@ -15237,7 +15255,7 @@ button,
   padding-bottom: 85px;
 }
 
-.learn-more-sec {
+.learn-more-sec-age {
   padding-top: 162px;
 }
 
@@ -15254,9 +15272,6 @@ button,
 }
 .clear-path-sec .potential-row {
   padding-top: 90px;
-}
-.clear-path-sec .potential-row .potential-img {
-  height: 393px;
 }
 
 .why-choose-us {
@@ -15275,6 +15290,33 @@ button,
 }
 .school-policies-sec .policies-card {
   padding: 105px 90px;
+}
+
+.upcoming-tour-prospective {
+  padding-top: 104px;
+  padding-bottom: 104px;
+  margin-top: 98px;
+}
+
+.learn-more-sec-prospective {
+  padding-top: 145px;
+}
+
+.insta-gallery-prospective {
+  padding-top: 145px;
+}
+
+.parents-area-sec {
+  padding-top: 94px;
+}
+.parents-area-sec .parents-welcome-area {
+  padding-top: 130px;
+}
+
+.reports-sec-parents {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-top: 170px;
 }
 
 /*# sourceMappingURL=main.css.map */
