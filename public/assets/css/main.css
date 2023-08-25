@@ -14501,6 +14501,10 @@ button:focus {
   z-index: 1 !important;
 }
 
+.opacity-35 {
+  opacity: 0.35;
+}
+
 .rotate-circle {
   transform: rotate(45deg);
 }
@@ -15282,9 +15286,10 @@ button,
   padding-top: 140px;
 }
 
-.school-policies-sec {
+.school-policies-prospective {
   padding-top: 145px;
 }
+
 .school-policies-sec .policies-img {
   height: 583px;
 }
@@ -15317,6 +15322,55 @@ button,
   padding-top: 150px;
   padding-bottom: 150px;
   margin-top: 170px;
+}
+
+.terms-fees-section {
+  margin-top: 120px;
+  height: 650px;
+}
+.terms-fees-section .top-img {
+  width: 412px;
+  height: 398px;
+}
+.terms-fees-section .bottom-img {
+  width: 321px;
+  height: 319px;
+  bottom: 70px;
+}
+
+.blog-sec-parents {
+  padding-top: 100px;
+  padding-bottom: 85px;
+  margin-top: 100px;
+}
+
+.upcoming-tour-parents {
+  margin-top: 145px;
+}
+
+.school-policies-parents {
+  padding-top: 145px;
+}
+
+.insta-gallery-parents {
+  padding-top: 130px;
+}
+
+.news-title-card {
+  padding-top: 230px;
+  padding-bottom: 120px;
+}
+
+.news-card-sec .single-blog {
+  margin-bottom: 75px;
+}
+.news-card-sec .btn-row .highlight {
+  background-color: #F1F1F1 !important;
+  opacity: 1 !important;
+}
+
+.insta-gallery-news {
+  padding-top: 145px;
 }
 
 /*# sourceMappingURL=main.css.map */

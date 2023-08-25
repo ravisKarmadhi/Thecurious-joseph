@@ -23652,6 +23652,22 @@ jquery_default()(function () {
 //     sticky.removeClass("header-fixed");
 //   }
 // });
+
+jquery_default()(document).ready(function () {
+  jquery_default()(".filter-button").click(function () {
+    var value = jquery_default()(this).attr('data-filter');
+    if (value == "all") {
+      jquery_default()('.filter').show('500');
+    } else {
+      jquery_default()(".filter").not('.' + value).hide('1000');
+      jquery_default()('.filter').filter('.' + value).show('1000');
+    }
+  });
+  // color toggle
+  jquery_default()(".filter-button").click(function () {
+    jquery_default()(this).toggleClass("highlight").siblings().removeClass("highlight");
+  });
+});
 })();
 
 /******/ })()
