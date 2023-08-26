@@ -70,6 +70,18 @@ export class App {
       autoplay: true,
       autoplaySpeed: 2000,
     });
+    $('.single-staff-slider').slick({
+      infinite: false,
+      slidesToShow: 1,
+      dots: false,
+      fade:true,
+      arrows: true,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: $(".staff-modal .slick--prev"),
+      nextArrow: $(".staff-modal .slick--next"),
+    });
   }
   slickSLider() { }
 }

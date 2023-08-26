@@ -23566,6 +23566,18 @@ var App = /*#__PURE__*/function () {
         autoplay: true,
         autoplaySpeed: 2000
       });
+      $('.single-staff-slider').slick({
+        infinite: false,
+        slidesToShow: 1,
+        dots: false,
+        fade: true,
+        arrows: true,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $(".staff-modal .slick--prev"),
+        nextArrow: $(".staff-modal .slick--next")
+      });
     }
   }, {
     key: "slickSLider",
@@ -23665,6 +23677,21 @@ jquery_default()(document).ready(function () {
   });
   // color toggle
   jquery_default()(".filter-button").click(function () {
+    jquery_default()(this).toggleClass("highlight").siblings().removeClass("highlight");
+  });
+});
+jquery_default()(document).ready(function () {
+  jquery_default()(".filter-staff-btn").click(function () {
+    var value = jquery_default()(this).attr('data-filter');
+    if (value == "all") {
+      jquery_default()('.filter-staff').show('500');
+    } else {
+      jquery_default()(".filter-staff").not('.' + value).hide('1000');
+      jquery_default()('.filter-staff').filter('.' + value).show('1000');
+    }
+  });
+  // color toggle
+  jquery_default()(".filter-staff-btn").click(function () {
     jquery_default()(this).toggleClass("highlight").siblings().removeClass("highlight");
   });
 });

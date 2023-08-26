@@ -47,7 +47,9 @@
 .fontML{
     font-size:$fontML;
 }
-
+.fontLX{
+    font-size:$fontLX;
+}
 .resfontX{
     @include media-breakpoint-down(lg) {
         font-size:$resfontX;

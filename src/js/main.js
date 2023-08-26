@@ -66,3 +66,20 @@ $(document).ready(function () {
     $(this).toggleClass("highlight").siblings().removeClass("highlight");
   });
 });
+
+$(document).ready(function () {
+  $(".filter-staff-btn").click(function () {
+    var value = $(this).attr('data-filter');
+    if (value == "all") {
+      $('.filter-staff').show('500');
+    }
+    else {
+      $(".filter-staff").not('.' + value).hide('1000');
+      $('.filter-staff').filter('.' + value).show('1000');
+    }
+  });
+  // color toggle
+  $(".filter-staff-btn").click(function () {
+    $(this).toggleClass("highlight").siblings().removeClass("highlight");
+  });
+});

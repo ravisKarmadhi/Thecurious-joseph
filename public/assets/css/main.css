@@ -14745,6 +14745,10 @@ textarea {
   font-size: 80px;
 }
 
+.fontLX {
+  font-size: 75px;
+}
+
 @media (max-width: 991.98px) {
   .resfontX {
     font-size: 10px;
@@ -15034,6 +15038,44 @@ button,
   right: -20px;
 }
 
+.control-form-input input {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 52px;
+  padding: 0 25px;
+}
+.control-form-input input::placeholder {
+  color: #fff;
+}
+.control-form-input textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px 25px;
+}
+.control-form-input textarea::placeholder {
+  color: #fff;
+}
+
+.search-input-custom input {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 60px;
+  padding: 0 60px 0 25px;
+}
+.search-input-custom input::placeholder {
+  color: #fff;
+}
+
+.contact-form-row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.contact-form-row .control-form-input {
+  margin-bottom: 11px;
+}
+
+.contact-form-row > * {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .card-hover img {
   transform: scale(1);
   transition: 0.3s all ease-in-out;
@@ -15092,6 +15134,26 @@ button,
 }
 .extraactivities-canvas .canvas-content {
   padding: 50px 61px;
+}
+
+.staff-modal .modal-dialog {
+  max-width: 912px;
+}
+.staff-modal .modal-dialog .slick-track {
+  width: 2736px !important;
+}
+.staff-modal .modal-dialog .slick-track .slick-slide {
+  width: 912px !important;
+}
+.staff-modal .modal-dialog .slick-track .slick-slide .staff-img {
+  height: 480px;
+}
+.staff-modal .modal-dialog .slick-track .slick-slide .body-content {
+  padding: 85px 50px 85px 5px;
+}
+.staff-modal .modal-dialog .staff-btn {
+  z-index: 1;
+  bottom: 80px !important;
 }
 
 .tour-slider .slick-slide {
@@ -15371,6 +15433,112 @@ button,
 
 .insta-gallery-news {
   padding-top: 145px;
+}
+
+.open-news-sec {
+  padding-top: 280px;
+}
+.open-news-sec .single-img {
+  height: 567px;
+}
+
+.blog-sec-new-open {
+  margin-top: 100px;
+  padding-top: 120px;
+  padding-bottom: 175px;
+}
+
+.learn-more-sec-new-open {
+  padding-top: 105px;
+}
+
+.insta-gallery-news-open {
+  padding-top: 125px;
+}
+
+.contact-form {
+  padding-top: 210px;
+}
+
+.usefull-link-sec {
+  padding-top: 85px;
+  padding-bottom: 105px;
+}
+
+.planningvisit-card {
+  background: linear-gradient(to bottom, #1B344E 0%, #1B344E 50%, #fff 50%, #fff 100%);
+}
+.planningvisit-card .row {
+  height: 378px;
+}
+.planningvisit-card .row .sidecard {
+  padding: 105px 70px;
+}
+
+.insta-gallery-conatct {
+  padding-top: 100px;
+}
+
+.staff-title-card {
+  padding-top: 200px;
+  padding-bottom: 135px;
+}
+
+.news-card-sec .single-staff {
+  margin-bottom: 56px;
+}
+
+.learn-more-sec-staff {
+  padding-top: 110px;
+  margin-top: 150px;
+}
+
+.insta-gallery-staff {
+  padding-top: 76px;
+}
+
+.faq-accordion {
+  padding-top: 240px;
+}
+.faq-accordion .accordion {
+  margin-top: 35px;
+}
+.faq-accordion .accordion .accordion-item {
+  background-color: rgba(255, 255, 255, 0.09);
+  margin-bottom: 22px;
+}
+.faq-accordion .accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.faq-accordion .accordion .accordion-item .accordion-button {
+  padding: 30px 36px;
+}
+.faq-accordion .accordion .accordion-item .accordion-button::after {
+  content: "+";
+  background-image: none !important;
+  transform: rotate(-45deg) !important;
+  width: 30px;
+  background: #1B344E;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 22px;
+  font-size: 20px;
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.faq-accordion .accordion .accordion-item .collapsed::after {
+  transform: rotate(0) !important;
+}
+.faq-accordion .accordion .accordion-item .accordion-body {
+  padding: 0 95px 55px 36px;
+}
+
+.cant-find-sec {
+  padding-top: 210px;
+}
+
+.insta-gallery-faq {
+  padding-top: 185px;
 }
 
 /*# sourceMappingURL=main.css.map */

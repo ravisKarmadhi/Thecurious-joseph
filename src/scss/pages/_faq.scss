@@ -1,0 +1,47 @@
+.faq-accordion{
+    padding-top:240px;
+    .accordion{
+        margin-top:35px;
+        .accordion-item{
+            background-color:rgba(255, 255, 255, 0.09);
+            margin-bottom:22px;
+            &:last-child{
+                margin-bottom:0;
+            }
+            .accordion-button{
+                padding:30px 36px;
+                &::after {
+                    content:"+";
+                    background-image:none !important;
+                    transform: rotate(-45deg) !important;
+                    width: 30px;
+                    background:$secondary;
+                    border-radius:50%;
+                    text-align:center;
+                    line-height:22px;
+                    font-size:20px;
+                    height: 30px;
+                    transition: all 0.3s ease-in-out;
+
+                }
+            }
+            .collapsed {
+                &::after {
+                    transform: rotate(0) !important;
+                }
+            }
+            .accordion-body{
+                padding:0 95px 55px 36px;
+            }
+        }
+    }
+}
+
+
+.cant-find-sec{
+    padding-top:210px;
+}
+
+.insta-gallery-faq{
+    padding-top:185px;
+}

@@ -1,13 +1,45 @@
-.extraactivities-canvas{
-    width:631px !important;
-    .close-btn{
-        top:38px;
-        right:38px;
+.extraactivities-canvas {
+    width: 631px !important;
+
+    .close-btn {
+        top: 38px;
+        right: 38px;
     }
-    .extra-activities-img{
+
+    .extra-activities-img {
         height: 338px;
     }
-    .canvas-content{
-        padding:50px 61px;
+
+    .canvas-content {
+        padding: 50px 61px;
     }
+}
+
+.staff-modal {
+    .modal-dialog {
+        max-width: 912px;
+
+        .slick-track {
+            width: 2736px !important;
+
+            .slick-slide {
+                width: 912px !important;
+
+                .staff-img {
+                    height: 480px;
+                }
+
+                .body-content {
+                    padding: 85px 50px 85px 5px;
+                }
+            }
+        }
+
+        .staff-btn {
+            z-index: 1;
+            bottom: 80px !important;
+        }
+    }
+
+
 }

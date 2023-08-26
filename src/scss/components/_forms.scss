@@ -19,3 +19,46 @@
         }
     }
 }
+
+
+.control-form-input{
+    input{
+        background-color:rgba(255, 255, 255, 0.1);
+        height:52px;
+        padding:0 25px;
+        &::placeholder{
+            color:$white;
+        }
+    }
+    textarea{
+        background-color:rgba(255, 255, 255, 0.1);
+        padding:30px 25px;
+        &::placeholder{
+            color:$white;
+        }
+    }
+}
+
+.search-input-custom{
+    input{
+        background-color:rgba(255, 255, 255, 0.1);
+        height:60px;
+        padding:0 60px 0 25px;
+        &::placeholder{
+            color:$white;
+        }
+    }
+}
+
+.contact-form-row{
+    margin-left: -5px;
+    margin-right: -5px;
+    .control-form-input{
+        margin-bottom:11px;
+    }
+}
+
+.contact-form-row>* {
+    padding-left: 5px;
+    padding-right: 5px;
+}
