@@ -43,3 +43,12 @@
 
 
 }
+
+.enquiry-modal{
+    .modal-dialog {
+        max-width: 576px;
+        .modal-body{
+            padding:85px 66px 50px;
+        }
+    }
+}

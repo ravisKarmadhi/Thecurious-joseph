@@ -14560,8 +14560,8 @@ textarea {
 }
 
 ::selection {
-  color: #fff;
-  background: #000;
+  color: #F8F7F2;
+  background: #1B344E;
 }
 
 .overflow-y-auto::-webkit-scrollbar {
@@ -14994,7 +14994,7 @@ button,
 }
 .hoverBtn:hover::after {
   background-color: 100%;
-  animation: example 1s;
+  animation: example 0.5s;
 }
 @keyframes example {
   from {
@@ -15017,6 +15017,11 @@ button,
 }
 .secondaryBtn::before {
   background-color: #1B344E;
+}
+
+.upload-file-btn {
+  border: 1px dashed #fff;
+  height: 60px;
 }
 
 .mail-label {
@@ -15054,12 +15059,12 @@ button,
   color: #fff;
 }
 
-.search-input-custom input {
+.inputX-custom input {
   background-color: rgba(255, 255, 255, 0.1);
   height: 60px;
   padding: 0 60px 0 25px;
 }
-.search-input-custom input::placeholder {
+.inputX-custom input::placeholder {
   color: #fff;
 }
 
@@ -15154,6 +15159,13 @@ button,
 .staff-modal .modal-dialog .staff-btn {
   z-index: 1;
   bottom: 80px !important;
+}
+
+.enquiry-modal .modal-dialog {
+  max-width: 576px;
+}
+.enquiry-modal .modal-dialog .modal-body {
+  padding: 85px 66px 50px;
 }
 
 .tour-slider .slick-slide {
@@ -15539,6 +15551,47 @@ button,
 
 .insta-gallery-faq {
   padding-top: 185px;
+}
+
+.vacancies-sec {
+  padding-top: 240px;
+}
+.vacancies-sec .vacancies-card {
+  padding: 82px 83px;
+  background-color: #F8F8F8;
+}
+
+.future-jobs {
+  padding-top: 120px;
+}
+
+.insta-gallery-vacancies {
+  padding-top: 120px;
+}
+
+.privacy-sec {
+  padding-top: 260px;
+  padding-bottom: 130px;
+}
+.privacy-sec .privacy-btn-row button {
+  height: 44px;
+}
+.privacy-sec .privacy-btn-row button:last-child {
+  margin-right: 0 !important;
+}
+.privacy-sec .privacy-btn-row .highlight {
+  background-color: #F1F1F1 !important;
+  opacity: 1 !important;
+  color: #1B344E !important;
+}
+.privacy-sec .single-policie {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 73px;
+  padding: 24px 24px 24px 38px;
+  margin-bottom: 10px;
+}
+.privacy-sec .single-policie:last-child {
+  margin-bottom: 0 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

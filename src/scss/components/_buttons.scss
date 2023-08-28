@@ -41,7 +41,7 @@ button,
         color: $primary;
         &::after {
             background-color: 100%;
-            animation: example 1s;
+            animation: example 0.5s;
             @keyframes example {
                 from {
                     width: 14px;
@@ -76,3 +76,9 @@ button,
         background-color:$secondary;
     }
 }
+
+.upload-file-btn{
+    border:1px dashed $white;
+    height:60px;
+}
+

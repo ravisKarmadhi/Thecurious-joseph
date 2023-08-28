@@ -1,0 +1,26 @@
+.privacy-sec{
+    padding-top:260px;
+    padding-bottom:130px;
+    .privacy-btn-row{
+        button{
+            height:44px;
+            &:last-child{
+                margin-right:0 !important;
+            }
+        }
+        .highlight{
+            background-color:$light !important;
+            opacity:1 !important;
+            color:$secondary !important;
+        }
+    }
+    .single-policie{
+        background-color:rgba(255, 255, 255, 0.1);
+        height:73px;
+        padding:24px 24px 24px 38px;
+        margin-bottom:10px;
+        &:last-child{
+            margin-bottom: 0 !important;
+        }
+    }
+}

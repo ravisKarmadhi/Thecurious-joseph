@@ -83,3 +83,39 @@ $(document).ready(function () {
     $(this).toggleClass("highlight").siblings().removeClass("highlight");
   });
 });
+
+$('#open-mobile-menu').click(function () {
+  $('.header-link').addClass("animate-slider");
+  $("html").addClass("overflow-hidden");
+});
+
+
+$('.read-more-btn').click(function () {
+  $('.read-more-content').removeClass("text-truncate text-truncate3");
+  $('.read-less-btn').removeClass('d-none');
+  $('.read-more-btn').addClass('d-none');
+});
+
+$('.read-less-btn').click(function () {
+  $('.read-more-content').addClass("text-truncate text-truncate3");
+  $('.read-less-btn').addClass('d-none');
+  $('.read-more-btn').removeClass('d-none');
+});
+
+
+$(document).ready(function () {
+  $(".policies-btn").click(function () {
+    var value = $(this).attr('data-filter');
+    if (value == "all") {
+      $('.policies-filter').show('500');
+    }
+    else {
+      $(".policies-filter").not('.' + value).hide('1000');
+      $('.policies-filter').filter('.' + value).show('1000');
+    }
+  });
+  // color toggle
+  $(".policies-btn").click(function () {
+    $(this).toggleClass("highlight").siblings().removeClass("highlight");
+  });
+});
