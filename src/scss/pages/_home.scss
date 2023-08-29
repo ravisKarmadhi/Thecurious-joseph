@@ -1,41 +1,79 @@
+.parents-section {
+    padding-top: 110px;
 
-.parents-section{
-    padding-top:110px;
-}
-.testimonial-home{
-    padding-top:240px;
-    padding-bottom:40px;
-    height:705px;
-    margin-top:130px;
-  
-}
+    @include media-breakpoint-down(lg) {
+        padding-top: 70px;
 
-.upcoming-tour{
-    .slider-img{
-        height: 567px;
-        .layer{
-            background-color:rgba(0, 0, 0, 0.40);
+        .groupCard {
+            margin-bottom: 45px;
         }
     }
 }
 
-.banner-sec{
-    padding-top:190px;
-    .banner-img{
-        height: 373px;
+.testimonial-home {
+    padding-top: 240px;
+    padding-bottom: 40px;
+    height: 705px;
+    margin-top: 130px;
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 25px;
+        padding-top: 75px;
     }
 }
 
-.upcoming-tour-home{
-    padding-top:110px;
+.upcoming-tour {
+    .slider-img {
+        height: 567px;
+
+        .layer {
+            background-color: rgba(0, 0, 0, 0.40);
+        }
+    }
 }
 
-.blog-sec-home{
-    padding-top:100px;
-    padding-bottom:85px;
-    margin-top:80px;
+.banner-sec {
+    padding-top: 190px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 80px;
+    }
+
+    .banner-img {
+        height: 373px;
+
+        @include media-breakpoint-down(lg) {
+            height: 293px;
+        }
+    }
 }
 
-.insta-gallery-home{
-    padding-top:96px;
+.upcoming-tour-home {
+    padding-top: 110px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 74px;
+
+        .slider-img {
+            height: 250px;
+        }
+    }
+}
+
+.blog-sec-home {
+    padding-top: 100px;
+    padding-bottom: 85px;
+    margin-top: 80px;
+    @include media-breakpoint-down(lg) {
+        padding-top:55px;
+        padding-bottom:55px;
+    }
+}
+
+.insta-gallery-home {
+    padding-top: 96px;
+}
+
+.home-page-hero {
+    height: 800px;
 }

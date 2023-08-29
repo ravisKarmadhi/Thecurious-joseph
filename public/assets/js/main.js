@@ -23724,6 +23724,21 @@ jquery_default()(document).ready(function () {
     jquery_default()(this).toggleClass("highlight").siblings().removeClass("highlight");
   });
 });
+jquery_default()(document).ready(function () {
+  jquery_default()(".usefull-btn").click(function () {
+    var value = jquery_default()(this).attr('data-filter');
+    if (value == "all") {
+      jquery_default()('.usefull-filter').show('500');
+    } else {
+      jquery_default()(".usefull-filter").not('.' + value).hide('1000');
+      jquery_default()('.usefull-filter').filter('.' + value).show('1000');
+    }
+  });
+  // color toggle
+  jquery_default()(".usefull-btn").click(function () {
+    jquery_default()(this).toggleClass("highlight").siblings().removeClass("highlight");
+  });
+});
 })();
 
 /******/ })()

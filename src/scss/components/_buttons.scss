@@ -82,3 +82,9 @@ button,
     height:60px;
 }
 
+
+.res-w-100{
+    @include media-breakpoint-down(lg) {
+        width:100% !important;
+    }
+}

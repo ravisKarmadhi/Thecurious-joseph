@@ -119,3 +119,20 @@ $(document).ready(function () {
     $(this).toggleClass("highlight").siblings().removeClass("highlight");
   });
 });
+
+$(document).ready(function () {
+  $(".usefull-btn").click(function () {
+    var value = $(this).attr('data-filter');
+    if (value == "all") {
+      $('.usefull-filter').show('500');
+    }
+    else {
+      $(".usefull-filter").not('.' + value).hide('1000');
+      $('.usefull-filter').filter('.' + value).show('1000');
+    }
+  });
+  // color toggle
+  $(".usefull-btn").click(function () {
+    $(this).toggleClass("highlight").siblings().removeClass("highlight");
+  });
+});

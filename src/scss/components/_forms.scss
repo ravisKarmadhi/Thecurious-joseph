@@ -1,6 +1,6 @@
 .mail-label {
-    transform: translate(450px, 32px);
-
+    right:0;
+    top:32px;
     .label-group {
         width: 141px;
         padding-left:20px;
@@ -61,4 +61,32 @@
 .contact-form-row>* {
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.apply-form{
+    margin-left: -6px;
+    margin-right: -6px;
+    .apply-input{
+        input{
+            height: 70px;
+            background:rgba(255, 255, 255, 0.1);
+            margin-bottom:12px;
+            padding:0 25px;
+            &::placeholder{
+                color:$white;
+            }
+        }
+        textarea{
+            background:rgba(255, 255, 255, 0.1);
+            padding:25px;
+            &::placeholder{
+                color:$white;
+            }
+        }
+    }
+}
+
+.apply-form>* {
+    padding-left: 6px;
+    padding-right: 6px;
 }

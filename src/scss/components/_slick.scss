@@ -1,6 +1,6 @@
 .tour-slider {
-  
-
+    
+    @include media-breakpoint-up(lg) {
         .slick-slide {
             transform: scaleX(0.87) scaleY(0.84);   
             transition: all 0.3s ease-in-out;
@@ -9,8 +9,15 @@
             transform: scaleX(1.03);
             transition: all 0.3s ease-in-out;
         }
-    
-    
+    }
+    @include media-breakpoint-down(lg) {
+            .slick-list{
+                margin:0 -5px;
+                .slick-slide{
+                    padding:0 5px;
+                }
+            }
+    }
 }
 
 .slick-overflow-visible{

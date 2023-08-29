@@ -1,26 +1,49 @@
 .privacy-sec{
     padding-top:260px;
     padding-bottom:130px;
-    .privacy-btn-row{
-        button{
-            height:44px;
-            &:last-child{
-                margin-right:0 !important;
-            }
-        }
-        .highlight{
-            background-color:$light !important;
-            opacity:1 !important;
-            color:$secondary !important;
-        }
+    .highlight{
+        background-color:$light !important;
+        opacity:1 !important;
+        color:$secondary !important;
     }
-    .single-policie{
-        background-color:rgba(255, 255, 255, 0.1);
-        height:73px;
-        padding:24px 24px 24px 38px;
-        margin-bottom:10px;
+
+}
+
+.usefull-links-sec{
+    padding-top:140px;
+    padding-bottom:150px;
+    .highlight{
+        background-color:$light !important;
+        opacity:1 !important;
+        color:$golden !important;
+    }
+}
+
+
+.privacy-btn-row{
+    button{
+        height:44px;
         &:last-child{
-            margin-bottom: 0 !important;
+            margin-right:0 !important;
         }
     }
+
+}
+.single-policie{
+    background-color:rgba(255, 255, 255, 0.1);
+    height:73px;
+    padding:24px 24px 24px 38px;
+    margin-bottom:10px;
+    &:last-child{
+        margin-bottom: 0 !important;
+    }
+}
+
+
+.cant-find-sec-privacy{
+    padding-top:190px;
+}
+
+.insta-gallery-privacy{
+    padding-top:150px;
 }

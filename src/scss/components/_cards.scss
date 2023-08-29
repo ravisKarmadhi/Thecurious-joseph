@@ -3,6 +3,7 @@
         transform: scale(1);
         transition: 0.3s all ease-in-out;
     }
+
     &:hover {
         img {
             transform: scale(1.1);
@@ -10,54 +11,68 @@
     }
 }
 
-.groupCard{
-    padding:85px 75px 55px 45px;
-    &.bgsecondary{
-        .triangle-end{
-            fill:$secondary;
+.groupCard {
+    padding: 85px 75px 55px 45px;
+
+    @include media-breakpoint-down(lg) {
+        padding: 78px 30px 35px;
+    }
+
+    &.bgsecondary {
+        .triangle-end {
+            fill: $secondary;
         }
     }
-    &.bgdanger{
-        .triangle-end{
-            fill:$danger;
+
+    &.bgdanger {
+        .triangle-end {
+            fill: $danger;
         }
     }
 }
 
-.testimonial-sec{
-  
-    .quote{
-        color:$primary;
-        font-size:700px;
-        opacity:0.03;
+.testimonial-sec {
+
+    .quote {
+        color: $primary;
+        font-size: 700px;
+        opacity: 0.03;
         transform: translateY(-180px);
     }
-    .quotesecondary{
-        color:$secondary !important;
+
+    .quotesecondary {
+        color: $secondary !important;
     }
-    .testimonial-card{
-        .testimonial-img{
-            width:184px;
-            min-width:184px;
-            height:184px;
-            margin-right:66px;
+
+    .testimonial-card {
+        .testimonial-img {
+            width: 184px;
+            min-width: 184px;
+            height: 184px;
+            margin-right: 66px;
+            @include media-breakpoint-down(lg) {
+                width:110px;
+                min-width:110px;
+                height:110px;
+                margin:0 auto;
+            }
         }
     }
 }
 
-.single-blog{
-    .blog-img{
+.single-blog {
+    .blog-img {
         height: 254px;
     }
 }
 
-.single-staff{
-    .staff-img{
-        height:355px;
+.single-staff {
+    .staff-img {
+        height: 355px;
     }
 }
 
 
-.potential-img{
-    height:393px;
+.potential-img {
+    height: 393px;
 }
