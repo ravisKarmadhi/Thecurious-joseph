@@ -1,26 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Our School</title>
-    <!-- Favicons -->
-    <link rel="icon" href="assets/images/favicon.svg" sizes="32x32" type="image/png" />
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/main.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.typekit.net/ymg8svq.css">
-</head>
-<body>
-    <main class="bgdanger">
-        <header>
-                 
-        </header>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Header</title>
+        <!-- Favicons -->
+        <link
+            rel="icon"
+            href="assets/images/favicon.svg"
+            sizes="32x32"
+            type="image/png"
+        />
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/main.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.typekit.net/ymg8svq.css" />
+    </head>
 
+    <body>
+        <main class="vh-100 bgdanger">
+            <header class="position-fixed w-100 top-0 transition" id="header-open">
+                <div class="container">
+                    <div
+                        class="d-flex align-items-center justify-content-between header transition"
+                    >
+                        <a href="index.html" class="text-decoration-none">
+                            <img
+                                src="assets/images/logo/logo.png"
+                                class="d-lg-block d-none"
+                                alt=""
+                            />
+                            <img
+                            src="assets/images/logo/mobile-logo.png"
+                            class="d-lg-none d-block"
+                            alt=""
+                        />
+                        </a>
+            
+                        <div class="d-flex align-items-center">
+                            <p
+                                class="sofia fw-semibold fontX resfontX resspacingX spacingX text-uppercase text-white me-3" id="open-text"
+                            >
+                                Menu
+                            </p>
+                            <p
+                            class="sofia fw-semibold fontX resfontX resspacingX spacingX text-uppercase text-white me-3 d-none" id="close-text"
+                        >
+                            close
+                        </p>
+                            <button class="bg-transparent border-0 p-0" id="menu-btn">
+                                <img
+                                    src="assets/images/icon/menu.svg"
+                                    class=""
+                                    alt=""
+                                />
+                            </button>
+                            <button class="bg-transparent border-0 p-0 d-none" id="close-btn">
+                                <img
+                                    src="assets/images/icon/close.svg"
+                                    class="d-lg-block d-none"
+                                    alt=""
+                                />
+                                <img
+                                src="assets/images/icon/mobile-close.svg"
+                                class="d-lg-none d-block"
+                                alt=""
+                            />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="justify-content-between nav-links d-none" id="open-menu">
+                        <div
+                            class="pt-lg-5 mt-lg-5 d-flex flex-column justify-content-between"
+                        >
+                            <div
+                                class="search-header d-flex"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="52"
+                                    height="52"
+                                    viewBox="0 0 52 52"
+                                    class="search-icon"
+                                >
+                                    <g
+                                        id="Group_3704"
+                                        data-name="Group 3704"
+                                        transform="translate(-100 -160)"
+                                    >
+                                        <circle
+                                            id="Ellipse_377"
+                                            data-name="Ellipse 377"
+                                            cx="26"
+                                            cy="26"
+                                            r="26"
+                                            transform="translate(100 160)"
+                                            fill="#fafaf8"
+                                            opacity="0.25"
+                                        />
+                                        <g
+                                            id="Group_3703"
+                                            data-name="Group 3703"
+                                            transform="translate(115.023 175.022)"
+                                        >
+                                            <path
+                                                id="Path_20361"
+                                                data-name="Path 20361"
+                                                d="M21.245,964.362a9.241,9.241,0,1,0,6.112,16.163l5.616,5.622a.572.572,0,0,0,.813,0,.583.583,0,0,0,0-.821l-5.607-5.6a9.245,9.245,0,0,0-6.934-15.36Zm0,1.155a8.086,8.086,0,1,1-8.09,8.086A8.079,8.079,0,0,1,21.245,965.517Z"
+                                                transform="translate(-12 -964.362)"
+                                                fill="#fafaf8"
+                                            />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <div class="suggestions-row">
+                                    <input
+                                        class="bg-transparent textprimary sofia resfontL fw-medium fontXX p-0 mb-0 border-0 w-100 rounded-0"
+                                        placeholder="Enter search term…"
+                                        id="search-input"
+                                        type="search"
+                                    />
+                                    <div id="suggestions-container"></div>
+                                </div>
+                            </div>
+            
+                            <div class="contact-icon mt-lg-0 mt-5 pt-lg-0 pt-4 d-lg-block d-none">
+                                <div class="d-lg-flex align-items-center">
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="text-decoration-none align-items-center d-flex"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="42"
+                                            height="42"
+                                            viewBox="0 0 42 42"
+                                        >
+                                            <g
+                                                id="Group_3705"
+                                                data-name="Group 3705"
+                                                transform="translate(-884 -562)"
+                                            >
+                                                <circle
+                                                    id="Ellipse_377"
+                                                    data-name="Ellipse 377"
+                                                    cx="21"
+                                                    cy="21"
+                                                    r="21"
+                                                    transform="translate(884 562)"
+                                                    fill="#fafaf8"
+                                                    opacity="0.25"
+                                                />
+                                                <g
+                                                    id="Group_3682"
+                                                    data-name="Group 3682"
+                                                    transform="translate(894.505 575.731)"
+                                                >
+                                                    <path
+                                                        id="Path_20344"
+                                                        data-name="Path 20344"
+                                                        d="M3.908,8a1.882,1.882,0,0,0-.948.263L12.1,17.214a.543.543,0,0,0,.785,0l9.148-8.948A1.882,1.882,0,0,0,21.082,8ZM2.28,8.931A1.884,1.884,0,0,0,2,9.908V21.358a1.878,1.878,0,0,0,.225.876L8.684,15.2Zm20.435.007-6.53,6.386,6.548,6.971a1.881,1.881,0,0,0,.257-.937V9.908a1.956,1.956,0,0,0-.276-.971ZM9.366,15.87l-6.5,7.079a1.892,1.892,0,0,0,1.046.317H21.082a1.885,1.885,0,0,0,.987-.284L15.5,15.992l-1.947,1.9a1.522,1.522,0,0,1-2.119,0Z"
+                                                        transform="translate(-2 -8)"
+                                                        fill="#fafaf8"
+                                                    />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <p class="ps-3 sofia fw-medium">
+                                            Email Login
+                                        </p>
+                                    </a>
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="text-decoration-none align-items-center d-flex ms-lg-5 mt-lg-0 mt-3"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="42"
+                                            height="42"
+                                            viewBox="0 0 42 42"
+                                        >
+                                            <g
+                                                id="Group_3706"
+                                                data-name="Group 3706"
+                                                transform="translate(-884 -632)"
+                                            >
+                                                <path
+                                                    id="Path_20380"
+                                                    data-name="Path 20380"
+                                                    d="M21,0A21,21,0,1,1,0,21,21,21,0,0,1,21,0Z"
+                                                    transform="translate(884 632)"
+                                                    fill="#fafaf8"
+                                                    opacity="0.25"
+                                                />
+                                                <g
+                                                    id="Group_3681"
+                                                    data-name="Group 3681"
+                                                    transform="translate(897.56 641.595)"
+                                                >
+                                                    <circle
+                                                        id="Ellipse_374"
+                                                        data-name="Ellipse 374"
+                                                        cx="4.396"
+                                                        cy="4.396"
+                                                        r="4.396"
+                                                        transform="translate(3.043)"
+                                                        fill="#fafaf8"
+                                                    />
+                                                    <path
+                                                        id="Path_20343"
+                                                        data-name="Path 20343"
+                                                        d="M14.469,16H10.411A5.411,5.411,0,0,0,5,21.411v4.058a.676.676,0,0,0,.676.676H19.2a.676.676,0,0,0,.676-.676V21.411A5.411,5.411,0,0,0,14.469,16Z"
+                                                        transform="translate(-5 -5.855)"
+                                                        fill="#fafaf8"
+                                                    />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <p class="ps-3 sofia fw-medium">
+                                            Portal Login
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="ps-0 mb-0 pt-lg-0 pt-5 mt-lg-0 mt-4" id="mobile-menu">
+                            <li class="list-none mb-lg-4 mb-3 text-lg-end">
+                                <a
+                                    href="our-schools.html"
+                                    class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none"
+                                >
+                                    Our School
+                                </a>
+                            </li>
+                            <li class="list-none mb-lg-4 mb-3 text-lg-end">
+                                <a
+                                    href="prospective-parents.html"
+                                    class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none"
+                                >
+                                    Prospective Parents
+                                </a>
+                            </li>
+                            <li class="list-none mb-lg-4 mb-3 text-lg-end">
+                                <a
+                                    href="parents.html"
+                                    class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none"
+                                >
+                                    Current Parents
+                                </a>
+                            </li>
+                            <li class="list-none mb-lg-4 mb-3 text-lg-end">
+                                <a
+                                    href="news.html"
+                                    class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none"
+                                >
+                                    News & Events
+                                </a>
+                            </li>
+                            <li class="list-none mb-lg-4 mb-3 text-lg-end">
+                                <a
+                                    href="contact.html"
+                                    class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none"
+                                >
+                                    Get in touch
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="contact-icon mt-lg-0 mt-5 pt-lg-0 pt-4 d-lg-none d-block pb-5" id="mobile-login">
+                            <div class="d-lg-flex align-items-center">
+                                <a
+                                    href="javascript:void(0);"
+                                    class="text-decoration-none align-items-center d-flex"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="42"
+                                        height="42"
+                                        viewBox="0 0 42 42"
+                                    >
+                                        <g
+                                            id="Group_3705"
+                                            data-name="Group 3705"
+                                            transform="translate(-884 -562)"
+                                        >
+                                            <circle
+                                                id="Ellipse_377"
+                                                data-name="Ellipse 377"
+                                                cx="21"
+                                                cy="21"
+                                                r="21"
+                                                transform="translate(884 562)"
+                                                fill="#fafaf8"
+                                                opacity="0.25"
+                                            />
+                                            <g
+                                                id="Group_3682"
+                                                data-name="Group 3682"
+                                                transform="translate(894.505 575.731)"
+                                            >
+                                                <path
+                                                    id="Path_20344"
+                                                    data-name="Path 20344"
+                                                    d="M3.908,8a1.882,1.882,0,0,0-.948.263L12.1,17.214a.543.543,0,0,0,.785,0l9.148-8.948A1.882,1.882,0,0,0,21.082,8ZM2.28,8.931A1.884,1.884,0,0,0,2,9.908V21.358a1.878,1.878,0,0,0,.225.876L8.684,15.2Zm20.435.007-6.53,6.386,6.548,6.971a1.881,1.881,0,0,0,.257-.937V9.908a1.956,1.956,0,0,0-.276-.971ZM9.366,15.87l-6.5,7.079a1.892,1.892,0,0,0,1.046.317H21.082a1.885,1.885,0,0,0,.987-.284L15.5,15.992l-1.947,1.9a1.522,1.522,0,0,1-2.119,0Z"
+                                                    transform="translate(-2 -8)"
+                                                    fill="#fafaf8"
+                                                />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <p class="ps-3 sofia fw-medium">
+                                        Email Login
+                                    </p>
+                                </a>
+                                <a
+                                    href="javascript:void(0);"
+                                    class="text-decoration-none align-items-center d-flex ms-lg-5 mt-lg-0 mt-3"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="42"
+                                        height="42"
+                                        viewBox="0 0 42 42"
+                                    >
+                                        <g
+                                            id="Group_3706"
+                                            data-name="Group 3706"
+                                            transform="translate(-884 -632)"
+                                        >
+                                            <path
+                                                id="Path_20380"
+                                                data-name="Path 20380"
+                                                d="M21,0A21,21,0,1,1,0,21,21,21,0,0,1,21,0Z"
+                                                transform="translate(884 632)"
+                                                fill="#fafaf8"
+                                                opacity="0.25"
+                                            />
+                                            <g
+                                                id="Group_3681"
+                                                data-name="Group 3681"
+                                                transform="translate(897.56 641.595)"
+                                            >
+                                                <circle
+                                                    id="Ellipse_374"
+                                                    data-name="Ellipse 374"
+                                                    cx="4.396"
+                                                    cy="4.396"
+                                                    r="4.396"
+                                                    transform="translate(3.043)"
+                                                    fill="#fafaf8"
+                                                />
+                                                <path
+                                                    id="Path_20343"
+                                                    data-name="Path 20343"
+                                                    d="M14.469,16H10.411A5.411,5.411,0,0,0,5,21.411v4.058a.676.676,0,0,0,.676.676H19.2a.676.676,0,0,0,.676-.676V21.411A5.411,5.411,0,0,0,14.469,16Z"
+                                                    transform="translate(-5 -5.855)"
+                                                    fill="#fafaf8"
+                                                />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <p class="ps-3 sofia fw-medium">
+                                        Portal Login
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>

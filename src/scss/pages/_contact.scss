@@ -5,21 +5,61 @@
 .usefull-link-sec {
     padding-top: 85px;
     padding-bottom: 105px;
+
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 60px;
+
+        .potential-img {
+            height: 160px;
+            margin-bottom: 20px;
+        }
+
+        .potential-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+        }
+    }
 }
 
 .planningvisit-card {
 
     background: linear-gradient(to bottom, $secondary 0%, $secondary 50%, $white 50%, $white 100%);
 
+    @include media-breakpoint-down(lg) {
+        background: #fff;
+        padding-top: 65px;
+
+        .plannning-img {
+            height: 305px;
+        }
+    }
+
     .row {
         height: 378px;
 
+        @include media-breakpoint-down(lg) {
+            height: auto;
+            transform: translateY(-70px);
+
+        }
+
         .sidecard {
             padding: 105px 70px;
+
+            @include media-breakpoint-down(lg) {
+                padding: 58px 30px 50px;
+                z-index:1;
+            }
         }
     }
 }
 
-.insta-gallery-conatct{
-    padding-top:100px;
+.insta-gallery-conatct {
+    padding-top: 100px;
+    @include media-breakpoint-down(lg) {
+        padding-top:30px;
+    }
 }

@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="42" height="42">
+	<title>Ellipse 377 (3)-svg</title>
+	<defs>
+		<image width="14" height="22" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMy40OTgiIGhlaWdodD0iMjEuNjU3IiB2aWV3Qm94PSIwIDAgMTMuNDk4IDIxLjY1NyI+CiAgPGcgaWQ9Ikdyb3VwXzM3NzUiIGRhdGEtbmFtZT0iR3JvdXAgMzc3NSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyLjM2NyAtMS43MDkpIj4KICAgIDxwYXRoIGlkPSJQYXRoXzIwMzc3IiBkYXRhLW5hbWU9IlBhdGggMjAzNzciIGQ9Ik0yMi45MjUsNTAuMzY2bC0uNDQzLjc1OWE2LjI4Myw2LjI4MywwLDAsMSwzLjUuNzMxYy0uMzM4LjI5LTIuMDA4LjczNy00LjYzLjczN3MtNC4yOTItLjQ0Ny00LjYzLS43MzdhNi43LDYuNywwLDAsMSwzLjM3OS0uNjlsLS40OTQtLjc4OGMtMS43LjEzOC0zLjcyOC41MDUtMy43MjgsMS40NzYsMCwxLjUsNC45MTMsMS41NDQsNS40NzMsMS41NDRzNS40NzMtLjA0Myw1LjQ3My0xLjU0NEMyNi44MjMsNTAuODU2LDI0LjcsNTAuNDk0LDIyLjkyNSw1MC4zNjZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMi4xNjYgLTMwLjAzNCkiIGZpbGw9IiNmZmYiLz4KICAgIDxwYXRoIGlkPSJQYXRoXzIwMzc4IiBkYXRhLW5hbWU9IlBhdGggMjAzNzgiIGQ9Ik0xOS4xMTYsMjEuODU1YS40LjQsMCwwLDAsLjMzNS0uMTc5Yy4yNjItLjM5MSw2LjQxNC05LjYzMiw2LjQxNC0xMy4yMThhNi43NDksNi43NDksMCwxLDAtMTMuNSwwYzAsMy41ODYsNi4xNTIsMTIuODI3LDYuNDE0LDEzLjIxOEEuNC40LDAsMCwwLDE5LjExNiwyMS44NTVaTTE1LjU0Nyw4LjMxMWEzLjYzNywzLjYzNywwLDEsMSwzLjYzNywzLjYzN0EzLjYzNiwzLjYzNiwwLDAsMSwxNS41NDcsOC4zMTFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwKSIgZmlsbD0iI2ZmZiIvPgogIDwvZz4KPC9zdmc+Cg=="/>
+	</defs>
+	<style>
+		.s0 { opacity: .3;fill: #fafaf8 } 
+	</style>
+	<path id="Ellipse_377" class="s0" d="m21 42c-11.6 0-21-9.4-21-21 0-11.6 9.4-21 21-21 11.6 0 21 9.4 21 21 0 11.6-9.4 21-21 21z"/>
+	<use id="Group 3775 (1)" href="#img1" transform="matrix(1,0,0,1,14,10)"/>
+</svg>

@@ -1,4 +1,47 @@
 .insta-gallery{
-
     padding-bottom:30px;
+}
+
+footer{
+    padding-top:54px;
+    padding-bottom:60px;
+    z-index:9;
+    position: relative;
+    @include media-breakpoint-down(lg) {
+        padding-top:80px;
+    }
+    .desk-icon-size{
+        svg{
+            height:42px;
+            width:42px;
+            min-width:42px;
+        }
+    }
+
+    .mail-cheap-input{
+        margin-top:18px;
+        input{
+            height: 53px;
+            background-color:rgba(255, 255, 255, 0.25);
+            padding-left:20px;
+            padding-right:40px;
+            &::placeholder{
+                color:#fff;
+              
+            }
+        }
+        button{
+            margin-right:14px;
+        }
+    }
+
+    ul{
+        li{
+            a{
+                &:hover{
+                    opacity:0.5 !important;
+                }
+            }
+        }
+    }
 }

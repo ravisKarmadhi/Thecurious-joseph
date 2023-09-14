@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Our School</title>
+    <title>FAQ's</title>
     <!-- Favicons -->
     <link rel="icon" href="assets/images/favicon.svg" sizes="32x32" type="image/png" />
     <!-- Bootstrap core CSS -->
@@ -14,25 +14,197 @@
     <link rel="stylesheet" href="https://use.typekit.net/ymg8svq.css">
 </head>
 
-<body>
+<body class="light-logo">
+
+  <header class="position-fixed w-100 top-0 transition" id="header-open">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between header transition">
+        <a href="index.html" class="text-decoration-none white-logo white-logo-js">
+          <img src="assets/images/logo/white-logo.svg" class="d-lg-block d-none" alt="" />
+          <img src="assets/images/logo/mobile-logo.png" class="d-lg-none d-block" alt="" />
+        </a>
+        <a href="index.html" class="text-decoration-none black-logo black-logo-js">
+          <img src="assets/images/logo/logo.svg" class="d-lg-block d-none" alt="" />
+          <img src="assets/images/logo/mobile-logo.png" class="d-lg-none d-block" alt="" />
+        </a>
+        <div class="d-flex align-items-center">
+          <p class="sofia fw-semibold text-open-menu fontX resfontX resspacingX spacingX text-uppercase text-white me-3"
+            id="open-text">
+            Menu
+          </p>
+          <p class="sofia fw-semibold  fontX resfontX resspacingX spacingX text-uppercase text-white me-3 d-none"
+            id="close-text">
+            close
+          </p>
+          <button class="bg-transparent border-0 p-0" id="menu-btn">
+            <img src="assets/images/icon/menu.svg" class="white-logo white-logo-js" alt="" />
+            <img src="assets/images/icon/menu-black.svg" class="black-logo black-logo-js" alt="" />
+          </button>
+          <button class="bg-transparent border-0 p-0 d-none" id="close-btn">
+            <img src="assets/images/icon/close.svg" class="d-lg-block d-none" alt="" />
+            <img src="assets/images/icon/mobile-close.svg" class="d-lg-none d-block" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="justify-content-between nav-links d-none" id="open-menu">
+        <div class="pt-lg-5 mt-lg-5 d-flex flex-column justify-content-between">
+          <div class="search-header d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" class="search-icon">
+              <g id="Group_3704" data-name="Group 3704" transform="translate(-100 -160)">
+                <circle id="Ellipse_377" data-name="Ellipse 377" cx="26" cy="26" r="26" transform="translate(100 160)"
+                  fill="#fafaf8" opacity="0.25" />
+                <g id="Group_3703" data-name="Group 3703" transform="translate(115.023 175.022)">
+                  <path id="Path_20361" data-name="Path 20361"
+                    d="M21.245,964.362a9.241,9.241,0,1,0,6.112,16.163l5.616,5.622a.572.572,0,0,0,.813,0,.583.583,0,0,0,0-.821l-5.607-5.6a9.245,9.245,0,0,0-6.934-15.36Zm0,1.155a8.086,8.086,0,1,1-8.09,8.086A8.079,8.079,0,0,1,21.245,965.517Z"
+                    transform="translate(-12 -964.362)" fill="#fafaf8" />
+                </g>
+              </g>
+            </svg>
+            <div class="suggestions-row">
+              <input
+                class="bg-transparent textprimary sofia resfontL fw-medium fontXX p-0 mb-0 border-0 w-100 rounded-0"
+                placeholder="Enter search term…" id="search-input" type="search" />
+              <div id="suggestions-container"></div>
+            </div>
+          </div>
+
+          <div class="contact-icon mt-lg-0 mt-5 pt-lg-0 pt-4 d-lg-block d-none">
+            <div class="d-lg-flex align-items-center">
+              <a href="javascript:void(0);" class="text-decoration-none align-items-center d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                  <g id="Group_3705" data-name="Group 3705" transform="translate(-884 -562)">
+                    <circle id="Ellipse_377" data-name="Ellipse 377" cx="21" cy="21" r="21"
+                      transform="translate(884 562)" fill="#fafaf8" opacity="0.25" />
+                    <g id="Group_3682" data-name="Group 3682" transform="translate(894.505 575.731)">
+                      <path id="Path_20344" data-name="Path 20344"
+                        d="M3.908,8a1.882,1.882,0,0,0-.948.263L12.1,17.214a.543.543,0,0,0,.785,0l9.148-8.948A1.882,1.882,0,0,0,21.082,8ZM2.28,8.931A1.884,1.884,0,0,0,2,9.908V21.358a1.878,1.878,0,0,0,.225.876L8.684,15.2Zm20.435.007-6.53,6.386,6.548,6.971a1.881,1.881,0,0,0,.257-.937V9.908a1.956,1.956,0,0,0-.276-.971ZM9.366,15.87l-6.5,7.079a1.892,1.892,0,0,0,1.046.317H21.082a1.885,1.885,0,0,0,.987-.284L15.5,15.992l-1.947,1.9a1.522,1.522,0,0,1-2.119,0Z"
+                        transform="translate(-2 -8)" fill="#fafaf8" />
+                    </g>
+                  </g>
+                </svg>
+                <p class="ps-3 sofia fw-medium">
+                  Email Login
+                </p>
+              </a>
+              <a href="javascript:void(0);" class="text-decoration-none align-items-center d-flex ms-lg-5 mt-lg-0 mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                  <g id="Group_3706" data-name="Group 3706" transform="translate(-884 -632)">
+                    <path id="Path_20380" data-name="Path 20380" d="M21,0A21,21,0,1,1,0,21,21,21,0,0,1,21,0Z"
+                      transform="translate(884 632)" fill="#fafaf8" opacity="0.25" />
+                    <g id="Group_3681" data-name="Group 3681" transform="translate(897.56 641.595)">
+                      <circle id="Ellipse_374" data-name="Ellipse 374" cx="4.396" cy="4.396" r="4.396"
+                        transform="translate(3.043)" fill="#fafaf8" />
+                      <path id="Path_20343" data-name="Path 20343"
+                        d="M14.469,16H10.411A5.411,5.411,0,0,0,5,21.411v4.058a.676.676,0,0,0,.676.676H19.2a.676.676,0,0,0,.676-.676V21.411A5.411,5.411,0,0,0,14.469,16Z"
+                        transform="translate(-5 -5.855)" fill="#fafaf8" />
+                    </g>
+                  </g>
+                </svg>
+                <p class="ps-3 sofia fw-medium">
+                  Portal Login
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <ul class="ps-0 mb-0 pt-lg-0 pt-5 mt-lg-0 mt-4" id="mobile-menu">
+          <li class="list-none mb-lg-4 mb-3 text-lg-end">
+            <a href="our-schools.html"
+              class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none">
+              Our School
+            </a>
+          </li>
+          <li class="list-none mb-lg-4 mb-3 text-lg-end">
+            <a href="prospective-parents.html"
+              class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none">
+              Prospective Parents
+            </a>
+          </li>
+          <li class="list-none mb-lg-4 mb-3 text-lg-end">
+            <a href="parents.html"
+              class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none">
+              Current Parents
+            </a>
+          </li>
+          <li class="list-none mb-lg-4 mb-3 text-lg-end">
+            <a href="news.html"
+              class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none">
+              News & Events
+            </a>
+          </li>
+          <li class="list-none mb-lg-4 mb-3 text-lg-end">
+            <a href="contact.html"
+              class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none">
+              Get in touch
+            </a>
+          </li>
+        </ul>
+        <div class="contact-icon mt-lg-0 mt-5 pt-lg-0 pt-4 d-lg-none d-block pb-5" id="mobile-login">
+          <div class="d-lg-flex align-items-center">
+            <a href="javascript:void(0);" class="text-decoration-none align-items-center d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                <g id="Group_3705" data-name="Group 3705" transform="translate(-884 -562)">
+                  <circle id="Ellipse_377" data-name="Ellipse 377" cx="21" cy="21" r="21" transform="translate(884 562)"
+                    fill="#fafaf8" opacity="0.25" />
+                  <g id="Group_3682" data-name="Group 3682" transform="translate(894.505 575.731)">
+                    <path id="Path_20344" data-name="Path 20344"
+                      d="M3.908,8a1.882,1.882,0,0,0-.948.263L12.1,17.214a.543.543,0,0,0,.785,0l9.148-8.948A1.882,1.882,0,0,0,21.082,8ZM2.28,8.931A1.884,1.884,0,0,0,2,9.908V21.358a1.878,1.878,0,0,0,.225.876L8.684,15.2Zm20.435.007-6.53,6.386,6.548,6.971a1.881,1.881,0,0,0,.257-.937V9.908a1.956,1.956,0,0,0-.276-.971ZM9.366,15.87l-6.5,7.079a1.892,1.892,0,0,0,1.046.317H21.082a1.885,1.885,0,0,0,.987-.284L15.5,15.992l-1.947,1.9a1.522,1.522,0,0,1-2.119,0Z"
+                      transform="translate(-2 -8)" fill="#fafaf8" />
+                  </g>
+                </g>
+              </svg>
+              <p class="ps-3 sofia fw-medium">
+                Email Login
+              </p>
+            </a>
+            <a href="javascript:void(0);" class="text-decoration-none align-items-center d-flex ms-lg-5 mt-lg-0 mt-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                <g id="Group_3706" data-name="Group 3706" transform="translate(-884 -632)">
+                  <path id="Path_20380" data-name="Path 20380" d="M21,0A21,21,0,1,1,0,21,21,21,0,0,1,21,0Z"
+                    transform="translate(884 632)" fill="#fafaf8" opacity="0.25" />
+                  <g id="Group_3681" data-name="Group 3681" transform="translate(897.56 641.595)">
+                    <circle id="Ellipse_374" data-name="Ellipse 374" cx="4.396" cy="4.396" r="4.396"
+                      transform="translate(3.043)" fill="#fafaf8" />
+                    <path id="Path_20343" data-name="Path 20343"
+                      d="M14.469,16H10.411A5.411,5.411,0,0,0,5,21.411v4.058a.676.676,0,0,0,.676.676H19.2a.676.676,0,0,0,.676-.676V21.411A5.411,5.411,0,0,0,14.469,16Z"
+                      transform="translate(-5 -5.855)" fill="#fafaf8" />
+                  </g>
+                </g>
+              </svg>
+              <p class="ps-3 sofia fw-medium">
+                Portal Login
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
     <main>
-        <section class="bgsecondary faq-accordion">
+
+        <!-- FAQ ACCORDION SECTION -->
+
+        <section class="bgsecondary faq-accordion overflow-hidden">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 px-4 mx-auto">
+                    <div class="col-lg-6 px-lg-4 mx-auto">
                         <div class="px-2">
-                            <h1 class="bastiaB fontMM textprimary text-center mb-4">FAQs</h1>
+                            <h1 class="bastiaB fontMM textprimary text-center mb-lg-4 mb-2 resfontSL">FAQs</h1>
                             <div class="inputX-custom position-relative">
                                 <input type="text" class="w-100 border-0 sofia fw-normal text-white fontS radiusX"
                                     placeholder="Enter search term here" />
                                 <button
                                     class="bg-transparent border-0 p-0 position-absolute end-0 top-0 d-flex flex-column justify-content-center h-100 me-4">
                                     <svg xmlns="http://www.w3.org/2000/svg" id="Group_3703" data-name="Group 3703"
-                                        width="21.955" height="21.955" viewBox="0 0 21.955 21.955">
+                                        width="21.955" height="21.955" viewBox="0 0 21.955 21.955" class="d-lg-block d-none">
                                         <path id="Path_20361" data-name="Path 20361"
                                             d="M21.245,964.362a9.241,9.241,0,1,0,6.112,16.163l5.616,5.622a.572.572,0,0,0,.813,0,.583.583,0,0,0,0-.821l-5.607-5.6a9.245,9.245,0,0,0-6.934-15.36Zm0,1.155a8.086,8.086,0,1,1-8.09,8.086A8.079,8.079,0,0,1,21.245,965.517Z"
                                             transform="translate(-12 -964.362)" fill="#fff" />
                                     </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15.694" height="15.694" viewBox="0 0 15.694 15.694" class="d-lg-none d-block">
+                                        <path id="Path_20361" data-name="Path 20361" d="M18.609,964.362a6.606,6.606,0,1,0,4.369,11.554l4.014,4.019a.409.409,0,0,0,.581,0,.417.417,0,0,0,0-.587l-4.008-4.006a6.609,6.609,0,0,0-4.957-10.98Zm0,.826a5.78,5.78,0,1,1-5.783,5.78A5.775,5.775,0,0,1,18.609,965.188Z" transform="translate(-12 -964.362)" fill="#fff"/>
+                                      </svg>
                                 </button>
                             </div>
                         </div>
@@ -46,19 +218,21 @@
                                         class="accordion-button sofia fw-semibold fontXS text-white bg-transparent rounded-0 shadow-none"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#faqOneCollapse"
                                         aria-expanded="true" aria-controls="faqOneCollapse">
-                                        Vestibulum pharetra euismod tristique?
+                                        <span class="me-5 d-block">
+                                            Vestibulum pharetra euismod tristique?
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="faqOneCollapse" class="accordion-collapse collapse show"
                                     aria-labelledby="faqOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body  col-11">
+                                    <div class="accordion-body  col-lg-11">
                                         <h6 class="sofia fw-normal fontS leadingX text-white pb-4 mb-2">
                                             The Early Years Department is a special place, where imagination comes
                                             alive, talents are nurtured and friendships are fostered. It is a happy
                                             vibrant place where your child’s days are ﬁlled with fun and laughter.
                                         </h6>
-                                        <a href="#"
-                                            class="bglight  sofia fw-bold overflow-hidden text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
+                                        <a href="contact.html"
+                                            class="bglight res-w-100  sofia fw-bold overflow-hidden text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
                                             <span class="position-relative zindex-1 ">GET IN TOUCH</span>
                                         </a>
                                     </div>
@@ -70,19 +244,21 @@
                                         class="accordion-button sofia fw-semibold fontXS text-white bg-transparent rounded-0 shadow-none collapsed"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#faqTwoCollapse"
                                         aria-expanded="false" aria-controls="faqTwoCollapse">
-                                        Vestibulum pharetra euismod tristique?
+                                        <span class="me-5 d-block">
+                                            Vestibulum pharetra euismod tristique?
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="faqTwoCollapse" class="accordion-collapse collapse" aria-labelledby="faqTwo"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body col-11">
+                                    <div class="accordion-body col-lg-11">
                                         <h6 class="sofia fw-normal fontS leadingX text-white pb-4 mb-2">
                                             The Early Years Department is a special place, where imagination comes
                                             alive, talents are nurtured and friendships are fostered. It is a happy
                                             vibrant place where your child’s days are ﬁlled with fun and laughter.
                                         </h6>
-                                        <a href="#"
-                                            class="bglight  sofia fw-bold overflow-hidden text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
+                                        <a href="contact.html"
+                                            class="bglight res-w-100  sofia fw-bold overflow-hidden text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
                                             <span class="position-relative zindex-1 ">GET IN TOUCH</span>
                                         </a>
                                     </div>
@@ -94,19 +270,21 @@
                                         class="accordion-button sofia fw-semibold fontXS text-white bg-transparent rounded-0 shadow-none collapsed"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#faqThreeCollapse"
                                         aria-expanded="false" aria-controls="faqThreeCollapse">
-                                        Vestibulum pharetra euismod tristique?
+                                        <span class="me-5 d-block">
+                                            Vestibulum pharetra euismod tristique?
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="faqThreeCollapse" class="accordion-collapse collapse"
                                     aria-labelledby="faqThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body col-11">
+                                    <div class="accordion-body col-lg-11">
                                         <h6 class="sofia fw-normal fontS leadingX text-white pb-4 mb-2">
                                             The Early Years Department is a special place, where imagination comes
                                             alive, talents are nurtured and friendships are fostered. It is a happy
                                             vibrant place where your child’s days are ﬁlled with fun and laughter.
                                         </h6>
-                                        <a href="#"
-                                            class="bglight  sofia fw-bold overflow-hidden text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
+                                        <a href="contact.html"
+                                            class="bglight res-w-100  sofia fw-bold overflow-hidden text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
                                             <span class="position-relative zindex-1 ">GET IN TOUCH</span>
                                         </a>
                                     </div>
@@ -118,19 +296,21 @@
                                         class="accordion-button sofia fw-semibold fontXS text-white bg-transparent rounded-0 shadow-none collapsed"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#faqFourCollapse"
                                         aria-expanded="false" aria-controls="faqFourCollapse">
-                                        Vestibulum pharetra euismod tristique?
+                                        <span class="me-5 d-block">
+                                            Vestibulum pharetra euismod tristique?
+                                        </span>
                                     </button>
                                 </h2>
                                 <div id="faqFourCollapse" class="accordion-collapse collapse" aria-labelledby="faqFour"
                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body col-11">
+                                    <div class="accordion-body col-lg-11">
                                         <h6 class="sofia fw-normal fontS leadingX text-white pb-4 mb-2">
                                             The Early Years Department is a special place, where imagination comes
                                             alive, talents are nurtured and friendships are fostered. It is a happy
                                             vibrant place where your child’s days are ﬁlled with fun and laughter.
                                         </h6>
-                                        <a href="#"
-                                            class="bglight  sofia fw-bold overflow-hidden text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
+                                        <a href="contact.html"
+                                            class="bglight res-w-100  sofia fw-bold overflow-hidden text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
                                             <span class="position-relative zindex-1 ">GET IN TOUCH</span>
                                         </a>
                                     </div>
@@ -143,13 +323,13 @@
         </section>
 
         <!-- can't find question -->
-        <section class="bg-secondary cant-find-sec">
+        <section class="bg-secondary cant-find-sec overflow-hidden">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 text-center mx-auto">
-                        <h3 class="bastiaB fontMS text-white">Can’t find your question?</h3>
-                        <h6 class="pt-4 sofia fw-medium fontS leadingS text-white px-5 pb-4 mb-3">The Early Years Department is a special place, where imagination comes alive, talents are nurtured and friendships are fostered. It is a happy vibrant place where your child’s days are ﬁlled with fun and laughter.</h6>
-                        <a href="#" class="bglight  sofia fw-bold mx-auto overflow-hidden text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
+                        <h3 class="bastiaB fontMS text-white resfontXL">Can’t find your question?</h3>
+                        <h6 class="pt-4 sofia fw-medium fontS leadingS text-white px-lg-5 pb-4 mb-3">The Early Years Department is a special place, where imagination comes alive, talents are nurtured and friendships are fostered. It is a happy vibrant place where your child’s days are ﬁlled with fun and laughter.</h6>
+                        <a href="contact.html" class="bglight res-w-100 sofia fw-bold mx-auto overflow-hidden text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
                             <span class="position-relative zindex-1 ">GET IN TOUCH</span>
                         </a>
                     </div>
@@ -159,7 +339,7 @@
 
         
     <!-- INSTAGRAM GALLERY SECTION -->
-    <section class="insta-gallery bgsecondary insta-gallery-faq">
+    <section class="insta-gallery bgsecondary insta-gallery-faq overflow-hidden">
         <div class="container">
           <a href="#" target="_blank" class="sofia fw-semibold fontM text-white text-decoration-none">Follow us
             @st.josephsprep</a>
@@ -189,6 +369,91 @@
         </div>
       </section>
     </main>
+
+    <footer class="bgdanger">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-7">
+            <div class="row">
+              <div class="col-lg-8 pb-lg-4 mb-lg-3">
+                <h2 class="bastiaB fontMS text-white pe-5  me-5 resfontSX">Need to get in touch?</h2>
+              </div>
+              <div class="col-xl-6 mt-lg-0 mt-5">
+                <div class="desk-icon-size d-flex align-items-center">
+                  <img src="assets/images/icon/call.svg" class="svg" alt="">
+                  <a href="tel:01234567890" class="text-decoration-none sofia fw-medium fontM textprimary ms-3">
+                    01234 567890
+                  </a>
+                </div>
+                <div class="desk-icon-size d-flex align-items-center mt-3">
+                  <img src="assets/images/icon/email.svg" class="svg" alt="">
+                  <a href="mailto:hello@stjosephs.com"
+                    class="text-decoration-none sofia fw-medium fontM textprimary ms-3">
+                    hello@stjosephs.com
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="desk-icon-size d-flex align-items-start mt-xl-0 mt-3">
+                  <img src="assets/images/icon/location-footer.svg" class="svg" alt=""/>
+                  <h6 class="text-decoration-none sofia fw-medium fontM textprimary ms-3 leadingM pe-4 me-1">
+                    St Joseph’s Preparatory School Rookery Lane, Trent Vale, Stoke on Trent, ST4 5RF
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5 ms-auto pt-4 mt-lg-2 mt-5">
+            <h4 class="bastiaB fontSX text-white">Sign up to our newsletter</h4>
+            <h6 class="sofia fw-normal fontS text-white mt-2">To receive the latest news</h6>
+            <div class="position-relative mail-cheap-input">
+              <input type="email" placeholder="Enter email address…"
+                class="w-100 border-0 radiusX sofia fw-normal text-white fontS lh-1" />
+              <button
+                class="p-0 bg-transparent border-0 position-absolute top-0 end-0 d-flex flex-column justify-content-center h-100">
+                <img src="assets/images/icon/white-arrow.svg" class="" alt=""/>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-lg-0 mt-5 pt-lg-0 pt-4">
+        <div class="col-12">
+          <ul class="ps-0 mb-0 d-flex flex-wrap align-items-center justify-content-lg-end w-100">
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="#" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                Useful Resources
+              </a>
+            </li>
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="staff.html" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                Staff
+              </a>
+            </li>
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="faq.html" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                FAQs
+              </a>
+            </li>
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="apply.html" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                Apply
+              </a>
+            </li>
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="vacancies.html" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                Vacancies
+              </a>
+            </li>
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="privacy.html" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                Policies
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>

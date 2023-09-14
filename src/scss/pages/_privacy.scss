@@ -1,6 +1,10 @@
 .privacy-sec{
     padding-top:260px;
     padding-bottom:130px;
+    @include media-breakpoint-down(lg) {
+        padding-top:240px;
+        padding-bottom:80px;
+    }
     .highlight{
         background-color:$light !important;
         opacity:1 !important;
@@ -12,6 +16,10 @@
 .usefull-links-sec{
     padding-top:140px;
     padding-bottom:150px;
+    @include media-breakpoint-down(lg) {
+        padding-top:75px;
+        padding-bottom:90px;
+    }
     .highlight{
         background-color:$light !important;
         opacity:1 !important;
@@ -32,8 +40,13 @@
 .single-policie{
     background-color:rgba(255, 255, 255, 0.1);
     height:73px;
-    padding:24px 24px 24px 38px;
+    line-height:73px;
+    padding:0 24px 0 38px;
     margin-bottom:10px;
+    @include media-breakpoint-down(lg) {
+        border-radius:5px !important;
+        padding:0 30px;
+    }
     &:last-child{
         margin-bottom: 0 !important;
     }
@@ -42,8 +55,14 @@
 
 .cant-find-sec-privacy{
     padding-top:190px;
+    @include media-breakpoint-down(lg) {
+        padding-top:110px;
+    }
 }
 
 .insta-gallery-privacy{
     padding-top:150px;
+    @include media-breakpoint-down(lg) {
+        padding-top:70px;
+    }
 }

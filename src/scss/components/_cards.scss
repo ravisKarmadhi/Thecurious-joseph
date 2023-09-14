@@ -3,7 +3,7 @@
         transform: scale(1);
         transition: 0.3s all ease-in-out;
     }
-
+       
     &:hover {
         img {
             transform: scale(1.1);
@@ -63,16 +63,29 @@
 .single-blog {
     .blog-img {
         height: 254px;
+        @include media-breakpoint-down(lg) {
+            height:226px;
+        }
     }
 }
 
 .single-staff {
     .staff-img {
         height: 355px;
+        @include media-breakpoint-down(lg) {
+            height:295px;
+        }
     }
 }
 
 
 .potential-img {
     height: 393px;
+}
+
+.insta-img{
+    height:177px;
+    @include media-breakpoint-down(lg) {
+        height:170px;
+    }
 }

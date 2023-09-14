@@ -35,6 +35,17 @@
             padding: 0 17.5px;
         }
     }
+
+    @include media-breakpoint-down(lg) {
+        .slick-list {
+            margin: 0 -5px;
+            overflow: visible;
+
+            .slick-slide {
+                padding: 0 5px;
+            }
+        }
+    }
 }
 
 .insta-slider{
@@ -45,4 +56,8 @@
             padding: 0 9.5px;
         }
     }
+}
+
+.slick-disabled{
+    opacity:0.25;
 }

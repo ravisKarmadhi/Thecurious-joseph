@@ -1,52 +1,102 @@
+ .group-hero {
+    @include media-breakpoint-down(lg) {
+       height: 583px;
+    }
+ }
+
  .learning-stroke {
-     padding-top: 45px;
-     padding-bottom: 140px;
+    padding-top: 45px;
+    padding-bottom: 140px;
+
+    @include media-breakpoint-down(lg) {
+       padding-top: 120px;
+       padding-bottom: 120px;
+
+    }
  }
 
  .early-year-learning {
-     padding-top: 115px;
+    padding-top: 115px;
  }
 
  .early-year-curriculum {
-     margin-top: 145px;
-     height: 610px;
+    margin-top: 145px;
+    height: 610px;
 
-     .top-img {
-         width: 412px;
-         height: 398px;
-     }
+    @include media-breakpoint-down(lg) {
+       height: auto;
+       margin-top: 95px;
+    }
 
-     .bottom-img {
-         width: 321px;
-         height: 319px;
-         bottom:70px;
-     }
+    .top-img {
+       width: 412px;
+       height: 398px;
+
+       @include media-breakpoint-down(lg) {
+          width: 245px;
+          height: 235px;
+       }
+    }
+
+    .bottom-img {
+       width: 321px;
+       height: 319px;
+       bottom: 70px;
+       @include media-breakpoint-down(lg) {
+         width: 170px;
+         height: 165px;
+         bottom:-65px;
+         left:180px;
+         right:auto;
+      }
+    }
  }
 
 
- .upcoming-tour-age{
-    padding-top:120px;
+ .upcoming-tour-age {
+    padding-top: 120px;
+    @include media-breakpoint-down(lg) {
+      padding-top:85px;
+   }
  }
 
- .reports-sec-age{
-    padding-top:150px;
-    margin-top:105px;
-    padding-bottom:150px;
+ .reports-sec-age {
+    padding-top: 150px;
+    margin-top: 105px;
+    padding-bottom: 150px;
+    @include media-breakpoint-down(lg) {
+      margin-top:85px;
+      padding-top:65px;
+      padding-bottom:75px;
+   }
  }
 
- .blog-sec-age{
-    padding-top:100px;
-    padding-bottom:85px;
+ .blog-sec-age {
+    padding-top: 100px;
+    padding-bottom: 85px;
+    @include media-breakpoint-down(lg) {
+      padding-top:55px;
+      padding-bottom:50px;
+   }
  }
 
- .learn-more-sec-age{
-    padding-top:162px;
+ .learn-more-sec-age {
+    padding-top: 160px;
+    @include media-breakpoint-down(lg) {
+      padding-top:80px;
+   }
  }
 
- .brochures-sec-age{
-    margin-top:160px;
+ .brochures-sec-age {
+    margin-top: 160px;
+    @include media-breakpoint-down(lg) {
+      margin-top:130px;
+   }
  }
 
- .insta-gallery-age{
-    padding-top:130px;
+ .insta-gallery-age {
+    padding-top: 130px;
+    @include media-breakpoint-down(lg) {
+      padding-top:65px;
+   }
  }

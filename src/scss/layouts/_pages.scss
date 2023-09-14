@@ -1,6 +1,9 @@
 .card-size{
     .card-img{
         height:580px;
+        @include media-breakpoint-down(lg) {
+            height:335px;
+        }
     }
 }
 
@@ -12,5 +15,42 @@
 .brochures-sec{
     .brochure-img{
         height: 467px;
+        @include media-breakpoint-down(lg) {
+            height:270px;
+            margin-bottom:12px;
+        }
+    }
+}
+
+.scroll {
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+    margin: 0;
+    padding: 74px 0 0 0;
+    transform: rotate(180deg) translateX(50%);
+    position: fixed !important;
+    z-index: 9;
+
+    p::before {
+        position: absolute;
+        content: "";
+        background: #fff;
+        height: 55px;
+        width: 1px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;                    
+        animation: heightbar 1s linear infinite;
+
+        @keyframes heightbar {
+            from {
+                height: 0;
+            }
+
+            to {
+                height: 55px;
+            }
+        }
     }
 }

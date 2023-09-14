@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+	<title>Ellipse 369-svg</title>
+	<defs>
+		<image width="8" height="8" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjA3MSIgaGVpZ2h0PSI3LjA3MSIgdmlld0JveD0iMCAwIDcuMDcxIDcuMDcxIj4KICA8ZyBpZD0iR3JvdXBfMzQwNCIgZGF0YS1uYW1lPSJHcm91cCAzNDA0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjcxMiAwLjcxMikiPgogICAgPHBhdGggaWQ9IlBhdGhfMjAzMzYiIGRhdGEtbmFtZT0iUGF0aCAyMDMzNiIgZD0iTTU0LDU0LjI2bDIuNTczLDIuNTY2TDU0LDU5LjRsLjI2LjI1MywyLjU2Ni0yLjU2Nkw1OS40LDU5LjY1MmwuMjUzLS4yNTMtMi41NjYtMi41NzMsMi41NjYtMi41NjZMNTkuNCw1NGwtMi41NzMsMi41NzNMNTQuMjYsNTRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTQgLTU0KSIgZmlsbD0iI2E1YTVhNSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgogIDwvZz4KPC9zdmc+Cg=="/>
+	</defs>
+	<style>
+		.s0 { opacity: .1;fill: #ffffff } 
+	</style>
+	<use id="Group 3404" href="#img1" transform="matrix(1,0,0,1,4,4)"/>
+	<path id="Ellipse_369" class="s0" d="m8 16c-4.4 0-8-3.6-8-8 0-4.4 3.6-8 8-8 4.4 0 8 3.6 8 8 0 4.4-3.6 8-8 8z"/>
+</svg>

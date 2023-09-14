@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Our School</title>
+    <title>Get In Touch</title>
     <!-- Favicons -->
     <link rel="icon" href="assets/images/favicon.svg" sizes="32x32" type="image/png" />
     <!-- Bootstrap core CSS -->
@@ -14,25 +14,188 @@
     <link rel="stylesheet" href="https://use.typekit.net/ymg8svq.css">
 </head>
 
-<body>
+<body class="light-logo">
+  <header class="position-fixed w-100 top-0 transition" id="header-open">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between header transition">
+        <a href="index.html" class="text-decoration-none white-logo white-logo-js">
+          <img src="assets/images/logo/white-logo.svg" class="d-lg-block d-none" alt="" />
+          <img src="assets/images/logo/mobile-logo.png" class="d-lg-none d-block" alt="" />
+        </a>
+        <a href="index.html" class="text-decoration-none black-logo black-logo-js">
+          <img src="assets/images/logo/logo.svg" class="d-lg-block d-none" alt="" />
+          <img src="assets/images/logo/mobile-logo.png" class="d-lg-none d-block" alt="" />
+        </a>
+        <div class="d-flex align-items-center">
+          <p class="sofia fw-semibold text-open-menu fontX resfontX resspacingX spacingX text-uppercase text-white me-3"
+            id="open-text">
+            Menu
+          </p>
+          <p class="sofia fw-semibold  fontX resfontX resspacingX spacingX text-uppercase text-white me-3 d-none"
+            id="close-text">
+            close
+          </p>
+          <button class="bg-transparent border-0 p-0" id="menu-btn">
+            <img src="assets/images/icon/menu.svg" class="white-logo white-logo-js" alt="" />
+            <img src="assets/images/icon/menu-black.svg" class="black-logo black-logo-js" alt="" />
+          </button>
+          <button class="bg-transparent border-0 p-0 d-none" id="close-btn">
+            <img src="assets/images/icon/close.svg" class="d-lg-block d-none" alt="" />
+            <img src="assets/images/icon/mobile-close.svg" class="d-lg-none d-block" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="justify-content-between nav-links d-none" id="open-menu">
+        <div class="pt-lg-5 mt-lg-5 d-flex flex-column justify-content-between">
+          <div class="search-header d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" class="search-icon">
+              <g id="Group_3704" data-name="Group 3704" transform="translate(-100 -160)">
+                <circle id="Ellipse_377" data-name="Ellipse 377" cx="26" cy="26" r="26" transform="translate(100 160)"
+                  fill="#fafaf8" opacity="0.25" />
+                <g id="Group_3703" data-name="Group 3703" transform="translate(115.023 175.022)">
+                  <path id="Path_20361" data-name="Path 20361"
+                    d="M21.245,964.362a9.241,9.241,0,1,0,6.112,16.163l5.616,5.622a.572.572,0,0,0,.813,0,.583.583,0,0,0,0-.821l-5.607-5.6a9.245,9.245,0,0,0-6.934-15.36Zm0,1.155a8.086,8.086,0,1,1-8.09,8.086A8.079,8.079,0,0,1,21.245,965.517Z"
+                    transform="translate(-12 -964.362)" fill="#fafaf8" />
+                </g>
+              </g>
+            </svg>
+            <div class="suggestions-row">
+              <input
+                class="bg-transparent textprimary sofia resfontL fw-medium fontXX p-0 mb-0 border-0 w-100 rounded-0"
+                placeholder="Enter search term…" id="search-input" type="search" />
+              <div id="suggestions-container"></div>
+            </div>
+          </div>
 
+          <div class="contact-icon mt-lg-0 mt-5 pt-lg-0 pt-4 d-lg-block d-none">
+            <div class="d-lg-flex align-items-center">
+              <a href="javascript:void(0);" class="text-decoration-none align-items-center d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                  <g id="Group_3705" data-name="Group 3705" transform="translate(-884 -562)">
+                    <circle id="Ellipse_377" data-name="Ellipse 377" cx="21" cy="21" r="21"
+                      transform="translate(884 562)" fill="#fafaf8" opacity="0.25" />
+                    <g id="Group_3682" data-name="Group 3682" transform="translate(894.505 575.731)">
+                      <path id="Path_20344" data-name="Path 20344"
+                        d="M3.908,8a1.882,1.882,0,0,0-.948.263L12.1,17.214a.543.543,0,0,0,.785,0l9.148-8.948A1.882,1.882,0,0,0,21.082,8ZM2.28,8.931A1.884,1.884,0,0,0,2,9.908V21.358a1.878,1.878,0,0,0,.225.876L8.684,15.2Zm20.435.007-6.53,6.386,6.548,6.971a1.881,1.881,0,0,0,.257-.937V9.908a1.956,1.956,0,0,0-.276-.971ZM9.366,15.87l-6.5,7.079a1.892,1.892,0,0,0,1.046.317H21.082a1.885,1.885,0,0,0,.987-.284L15.5,15.992l-1.947,1.9a1.522,1.522,0,0,1-2.119,0Z"
+                        transform="translate(-2 -8)" fill="#fafaf8" />
+                    </g>
+                  </g>
+                </svg>
+                <p class="ps-3 sofia fw-medium">
+                  Email Login
+                </p>
+              </a>
+              <a href="javascript:void(0);" class="text-decoration-none align-items-center d-flex ms-lg-5 mt-lg-0 mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                  <g id="Group_3706" data-name="Group 3706" transform="translate(-884 -632)">
+                    <path id="Path_20380" data-name="Path 20380" d="M21,0A21,21,0,1,1,0,21,21,21,0,0,1,21,0Z"
+                      transform="translate(884 632)" fill="#fafaf8" opacity="0.25" />
+                    <g id="Group_3681" data-name="Group 3681" transform="translate(897.56 641.595)">
+                      <circle id="Ellipse_374" data-name="Ellipse 374" cx="4.396" cy="4.396" r="4.396"
+                        transform="translate(3.043)" fill="#fafaf8" />
+                      <path id="Path_20343" data-name="Path 20343"
+                        d="M14.469,16H10.411A5.411,5.411,0,0,0,5,21.411v4.058a.676.676,0,0,0,.676.676H19.2a.676.676,0,0,0,.676-.676V21.411A5.411,5.411,0,0,0,14.469,16Z"
+                        transform="translate(-5 -5.855)" fill="#fafaf8" />
+                    </g>
+                  </g>
+                </svg>
+                <p class="ps-3 sofia fw-medium">
+                  Portal Login
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <ul class="ps-0 mb-0 pt-lg-0 pt-5 mt-lg-0 mt-4" id="mobile-menu">
+          <li class="list-none mb-lg-4 mb-3 text-lg-end">
+            <a href="our-schools.html"
+              class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none">
+              Our School
+            </a>
+          </li>
+          <li class="list-none mb-lg-4 mb-3 text-lg-end">
+            <a href="prospective-parents.html"
+              class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none">
+              Prospective Parents
+            </a>
+          </li>
+          <li class="list-none mb-lg-4 mb-3 text-lg-end">
+            <a href="parents.html"
+              class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none">
+              Current Parents
+            </a>
+          </li>
+          <li class="list-none mb-lg-4 mb-3 text-lg-end">
+            <a href="news.html"
+              class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none">
+              News & Events
+            </a>
+          </li>
+          <li class="list-none mb-lg-4 mb-3 text-lg-end">
+            <a href="contact.html"
+              class="bastiaB resfontXL transition text-lg-end fontMS textprimary opacity-25 text-decoration-none">
+              Get in touch
+            </a>
+          </li>
+        </ul>
+        <div class="contact-icon mt-lg-0 mt-5 pt-lg-0 pt-4 d-lg-none d-block pb-5" id="mobile-login">
+          <div class="d-lg-flex align-items-center">
+            <a href="javascript:void(0);" class="text-decoration-none align-items-center d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                <g id="Group_3705" data-name="Group 3705" transform="translate(-884 -562)">
+                  <circle id="Ellipse_377" data-name="Ellipse 377" cx="21" cy="21" r="21" transform="translate(884 562)"
+                    fill="#fafaf8" opacity="0.25" />
+                  <g id="Group_3682" data-name="Group 3682" transform="translate(894.505 575.731)">
+                    <path id="Path_20344" data-name="Path 20344"
+                      d="M3.908,8a1.882,1.882,0,0,0-.948.263L12.1,17.214a.543.543,0,0,0,.785,0l9.148-8.948A1.882,1.882,0,0,0,21.082,8ZM2.28,8.931A1.884,1.884,0,0,0,2,9.908V21.358a1.878,1.878,0,0,0,.225.876L8.684,15.2Zm20.435.007-6.53,6.386,6.548,6.971a1.881,1.881,0,0,0,.257-.937V9.908a1.956,1.956,0,0,0-.276-.971ZM9.366,15.87l-6.5,7.079a1.892,1.892,0,0,0,1.046.317H21.082a1.885,1.885,0,0,0,.987-.284L15.5,15.992l-1.947,1.9a1.522,1.522,0,0,1-2.119,0Z"
+                      transform="translate(-2 -8)" fill="#fafaf8" />
+                  </g>
+                </g>
+              </svg>
+              <p class="ps-3 sofia fw-medium">
+                Email Login
+              </p>
+            </a>
+            <a href="javascript:void(0);" class="text-decoration-none align-items-center d-flex ms-lg-5 mt-lg-0 mt-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                <g id="Group_3706" data-name="Group 3706" transform="translate(-884 -632)">
+                  <path id="Path_20380" data-name="Path 20380" d="M21,0A21,21,0,1,1,0,21,21,21,0,0,1,21,0Z"
+                    transform="translate(884 632)" fill="#fafaf8" opacity="0.25" />
+                  <g id="Group_3681" data-name="Group 3681" transform="translate(897.56 641.595)">
+                    <circle id="Ellipse_374" data-name="Ellipse 374" cx="4.396" cy="4.396" r="4.396"
+                      transform="translate(3.043)" fill="#fafaf8" />
+                    <path id="Path_20343" data-name="Path 20343"
+                      d="M14.469,16H10.411A5.411,5.411,0,0,0,5,21.411v4.058a.676.676,0,0,0,.676.676H19.2a.676.676,0,0,0,.676-.676V21.411A5.411,5.411,0,0,0,14.469,16Z"
+                      transform="translate(-5 -5.855)" fill="#fafaf8" />
+                  </g>
+                </g>
+              </svg>
+              <p class="ps-3 sofia fw-medium">
+                Portal Login
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
     <main>
 
-
-        <section class="bgsecondary contact-form">
+        <!-- GET IN TOUCH SECTION -->
+        <section class="bgsecondary contact-form overflow-hidden">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-                        <h1 class="fontLX bastiaB text-white mb-5">Get in touch</h1>
+                        <h1 class="fontLX bastiaB text-white mb-lg-5 mb-3 pb-lg-0 pb-2 resfontSL me-lg-0 me-3 resleadingXL">Get in touch</h1>
 
-                        <div class="d-flex align-items-center mb-3">
+                        <div class="d-flex align-items-center mb-lg-3 mb-4 pb-lg-0 pb-1">
                             <img src="assets/images/icon/call.svg" class="" alt="" />
                             <a href="tel:01234567890"
                                 class="text-decoration-none sofia fw-medium fontM textlight ms-3">01234 567890</a>
                         </div>
 
-                        <div class="d-flex align-items-center mb-3">
+                        <div class="d-flex align-items-center mb-lg-3 mb-4 pb-lg-0 pb-1">
                             <img src="assets/images/icon/email.svg" class="" alt="" />
 
                             <a href="mailto:enquiries@stjosephsprepschool.co.uk"
@@ -41,17 +204,22 @@
 
                         <div class="d-flex align-items-start">
                             <img src="assets/images/icon/location.svg" class="" alt="" />
-                            <p class="sofia fw-medium fontM textlight ms-3 leadingM">St Joseph’s Preparatory School
+                            <p class="sofia fw-medium fontM textlight ms-3 leadingM me-lg-0 me-5 pe-lg-0 pe-4">St Joseph’s Preparatory School
                                 Rookery Lane, Trent Vale, Stoke on Trent, ST4 5RF</p>
                         </div>
-                        <div class="pt-5 mt-3">
+                        <div class="pt-5 mt-3 d-lg-block d-none">
                             <span class="sofia fw-normal fontS text-white">
-                                Got a question? <a href="#" class="text-white">Check our FAQs</a>
+                                Got a question? <a href="faq.html" class="text-white">Check our FAQs</a>
                             </span>
                         </div>
                     </div>
-                    <div class="col-lg-7 ms-auto ps-3">
-                        <h4 class="bastiaB fontSM text-white text-center pb-4 mb-1">Get in touch via our form</h4>
+                    <div class="col-lg-7 ms-auto ps-lg-3 pt-lg-0 pt-5 mt-lg-0 mt-5">
+                        <h4 class="bastiaB fontSM text-white text-center pb-4 mb-1 resfontXS px-lg-0 px-5 mt-lg-0 mt-2">Get in touch via our form</h4>
+                        <div class="d-lg-none d-block text-center">
+                            <span class="sofia fw-normal fontS text-white">
+                                Got a question? <a href="faq.html" class="text-white">Check our FAQs</a>
+                            </span>
+                        </div>
                         <div class="row contact-form-row">
                             <div class="col-lg-6 control-form-input">
                                 <input type="text" class="w-100 border-0 sofia fw-normal text-white fontS radiusX"
@@ -69,13 +237,13 @@
                                 <input type="text" class="w-100 border-0 sofia fw-normal text-white fontS radiusX"
                                     placeholder="Subject…" />
                             </div>
-                            <div class="col-lg-12 control-form-input mb-3 pb-1">
+                            <div class="col-lg-12 control-form-input mb-lg-3 mb-4 pb-lg-1">
                                 <textarea type="text" rows="4"
                                     class="w-100 border-0 sofia fw-normal text-white fontS radiusX"
                                     placeholder="Message…"></textarea>
                             </div>
-                            <a href="#"
-                                class="bglight  sofia fw-bold overflow-hidden mx-auto text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
+                            <a href="javascript:void(0);"
+                                class="bglight px-0 res-w-100 sofia fw-bold overflow-hidden mx-auto text-uppercase radiusX btnX d-inline-block text-center text-decoration-none d-flex flex-column justify-content-center textsecondary position-relative hoverBtn dangerBtn spacingX fontX">
                                 <span class="position-relative zindex-1 ">SUBMIT FORM</span>
                             </a>
                         </div>
@@ -83,78 +251,54 @@
                 </div>
             </div>
         </section>
-
-        <section class="bgsecondary usefull-link-sec">
+        <!-- USEFULL LINK SECTION -->
+        <section class="bgsecondary usefull-link-sec overflow-hidden">
             <div class="container">
                 <div class="row rowS">
                     <div class="col-lg-4 ">
-                        <a href="#" class="text-decoration-none d-inline-block">
+                        <a href="javascript:void(0);" class="text-decoration-none d-inline-block w-100">
                             <div class="potential-img radiusS overflow-hidden position-relative card-hover">
                                 <img src="assets/images/others/card-img-1.png" class="w-100 h-100 object-cover"
                                     alt="" />
-                                <svg class="position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 393 261">
-                                    <defs>
-                                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
-                                            gradientUnits="objectBoundingBox">
-                                            <stop offset="0" stop-opacity="0" />
-                                            <stop offset="1" />
-                                        </linearGradient>
-                                    </defs>
-                                    <rect id="StJosephsPrepSchool-TrentValeOct18-8680" width="393" height="261" rx="10"
-                                        opacity="0.818" fill="url(#linear-gradient)" />
-                                </svg>
-                                <div class="position-absolute bottom-0 w-100 pb-4 mb-2 text-center px-2">
+                                    <img src="assets/images/layer/resources-layer.svg"
+                                    class="position-absolute bottom-0 start-0 d-lg-block d-none" alt="" />
+                                <img src="assets/images/layer/resources-layer-res.svg"
+                                    class="position-absolute bottom-0 start-0 d-lg-none w-100" alt="" />
+                                <div class="position-absolute bottom-0 w-100 pb-lg-4 mb-lg-2 text-center px-2 potential-content">
 
-                                    <h4 class="mt-3 bastiaB fontSM textprimary px-5">Useful Links</h4>
+                                    <h4 class="mt-lg-3 bastiaB fontSM textprimary px-5 resfontXL">Useful Links</h4>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 ">
-                        <a href="#" class="text-decoration-none d-inline-block">
+                        <a href="javascript:void(0);" class="text-decoration-none d-inline-block w-100">
                             <div class="potential-img radiusS overflow-hidden position-relative card-hover">
                                 <img src="assets/images/others/card-img-7.png" class="w-100 h-100 object-cover"
                                     alt="" />
-                                <svg class="position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 393 261">
-                                    <defs>
-                                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
-                                            gradientUnits="objectBoundingBox">
-                                            <stop offset="0" stop-opacity="0" />
-                                            <stop offset="1" />
-                                        </linearGradient>
-                                    </defs>
-                                    <rect id="StJosephsPrepSchool-TrentValeOct18-8680" width="393" height="261" rx="10"
-                                        opacity="0.818" fill="url(#linear-gradient)" />
-                                </svg>
-                                <div class="position-absolute bottom-0 w-100 pb-4 mb-2 text-center px-2">
+                                    <img src="assets/images/layer/resources-layer.svg"
+                                    class="position-absolute bottom-0 start-0 d-lg-block d-none" alt="" />
+                                <img src="assets/images/layer/resources-layer-res.svg"
+                                    class="position-absolute bottom-0 start-0 d-lg-none w-100" alt="" />
+                                <div class="position-absolute bottom-0 w-100 pb-lg-4 mb-lg-2 text-center px-2 potential-content">
 
-                                    <h4 class="mt-3 bastiaB fontSM textprimary px-5">FAQ’s</h4>
+                                    <h4 class="mt-lg-3 bastiaB fontSM textprimary px-5 resfontXL">FAQ’s</h4>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 ">
-                        <a href="#" class="text-decoration-none d-inline-block">
+                        <a href="javascript:void(0);" class="text-decoration-none d-inline-block w-100">
                             <div class="potential-img radiusS overflow-hidden position-relative card-hover">
                                 <img src="assets/images/others/bottom-img.png" class="w-100 h-100 object-cover"
                                     alt="" />
-                                <svg class="position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 393 261">
-                                    <defs>
-                                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
-                                            gradientUnits="objectBoundingBox">
-                                            <stop offset="0" stop-opacity="0" />
-                                            <stop offset="1" />
-                                        </linearGradient>
-                                    </defs>
-                                    <rect id="StJosephsPrepSchool-TrentValeOct18-8680" width="393" height="261" rx="10"
-                                        opacity="0.818" fill="url(#linear-gradient)" />
-                                </svg>
-                                <div class="position-absolute bottom-0 w-100 pb-4 mb-2 text-center px-2">
+                                    <img src="assets/images/layer/resources-layer.svg"
+                                    class="position-absolute bottom-0 start-0 d-lg-block d-none" alt="" />
+                                <img src="assets/images/layer/resources-layer-res.svg"
+                                    class="position-absolute bottom-0 start-0 d-lg-none w-100" alt="" />
+                                <div class="position-absolute bottom-0 w-100 pb-lg-4 mb-lg-2 text-center px-2 potential-content">
 
-                                    <h4 class="mt-3 bastiaB fontSM textprimary px-5">Vacancies</h4>
+                                    <h4 class="mt-lg-3 bastiaB fontSM textprimary px-5 resfontXL">Vacancies</h4>
                                 </div>
                             </div>
                         </a>
@@ -163,17 +307,21 @@
             </div>
         </section>
 
-        <section class="planningvisit-card">
+        <!-- PLANNING VISITING CARD -->
+        <section class="planningvisit-card overflow-hidden">
+            <div class="plannning-img radiusS overflow-hidden d-lg-none">
+                <img src="assets/images/others/card-img-8.png" class="w-100 h-100 object-cover" alt=""/>
+            </div>
             <div class="container">
                 <div class="row overflow-hidden radiusS">
                     <div class="col-lg-7 bggolden sidecard h-100">
-                        <h3 class="bastiaB fontSL textprimary">Planning a visit?</h3>
-                        <h6 class="sofia fw-medium text-white fontS mt-2 py-1 mb-3 ">St. Joseph’s Preparatory School holds Pastoral, Health and Safety and Staffing Policies.</h6>
-                        <a href="#" class="bglight sofia fw-bold overflow-hidden text-uppercase radiusX btnS d-inline-block text-center text-decoration-none d-flex  flex-column justify-content-center textsecondary position-relative hoverBtn secondaryBtn spacingX fontX">
+                        <h3 class="bastiaB fontSL textprimary resfontXL">Planning a visit?</h3>
+                        <h6 class="sofia fw-medium text-white fontS mt-2 py-1 mb-3 leadingX">St. Joseph’s Preparatory School holds Pastoral, Health and Safety and Staffing Policies.</h6>
+                        <a href="https://goo.gl/maps/wpLSiB1zqFTDt4Lr8" target="_blank" class="bglight res-w-100 sofia fw-bold overflow-hidden text-uppercase radiusX btnS d-inline-block text-center text-decoration-none d-flex  flex-column justify-content-center textsecondary position-relative hoverBtn secondaryBtn spacingX fontX">
                             <span class="position-relative zindex-1 ">GET DIRECTIONS</span>
                           </a>
                     </div>
-                    <div class="h-100 col-5">
+                    <div class="h-100 col-lg-5 d-lg-block d-none">
                         <img src="assets/images/others/card-img-8.png" class="w-100 h-100 object-cover" alt=""/>
                     </div>
                 </div>
@@ -181,7 +329,7 @@
         </section>
 
         <!-- INSTAGRAM GALLERY SECTION -->
-        <section class="insta-gallery insta-gallery-conatct">
+        <section class="insta-gallery insta-gallery-conatct overflow-hidden">
             <div class="container">
                 <a href="#" target="_blank" class="sofia fw-semibold fontM textsecondary text-decoration-none">Follow us
                     @st.josephsprep</a>
@@ -212,6 +360,91 @@
         </section>
 
     </main>
+
+    <footer class="bgdanger">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-7">
+            <div class="row">
+              <div class="col-lg-8 pb-lg-4 mb-lg-3">
+                <h2 class="bastiaB fontMS text-white pe-5  me-5 resfontSX">Need to get in touch?</h2>
+              </div>
+              <div class="col-xl-6 mt-lg-0 mt-5">
+                <div class="desk-icon-size d-flex align-items-center">
+                  <img src="assets/images/icon/call.svg" class="svg" alt="">
+                  <a href="tel:01234567890" class="text-decoration-none sofia fw-medium fontM textprimary ms-3">
+                    01234 567890
+                  </a>
+                </div>
+                <div class="desk-icon-size d-flex align-items-center mt-3">
+                  <img src="assets/images/icon/email.svg" class="svg" alt="">
+                  <a href="mailto:hello@stjosephs.com"
+                    class="text-decoration-none sofia fw-medium fontM textprimary ms-3">
+                    hello@stjosephs.com
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="desk-icon-size d-flex align-items-start mt-xl-0 mt-3">
+                  <img src="assets/images/icon/location-footer.svg" class="svg" alt=""/>
+                  <h6 class="text-decoration-none sofia fw-medium fontM textprimary ms-3 leadingM pe-4 me-1">
+                    St Joseph’s Preparatory School Rookery Lane, Trent Vale, Stoke on Trent, ST4 5RF
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5 ms-auto pt-4 mt-lg-2 mt-5">
+            <h4 class="bastiaB fontSX text-white">Sign up to our newsletter</h4>
+            <h6 class="sofia fw-normal fontS text-white mt-2">To receive the latest news</h6>
+            <div class="position-relative mail-cheap-input">
+              <input type="email" placeholder="Enter email address…"
+                class="w-100 border-0 radiusX sofia fw-normal text-white fontS lh-1" />
+              <button
+                class="p-0 bg-transparent border-0 position-absolute top-0 end-0 d-flex flex-column justify-content-center h-100">
+                <img src="assets/images/icon/white-arrow.svg" class="" alt=""/>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-lg-0 mt-5 pt-lg-0 pt-4">
+        <div class="col-12">
+          <ul class="ps-0 mb-0 d-flex flex-wrap align-items-center justify-content-lg-end w-100">
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="#" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                Useful Resources
+              </a>
+            </li>
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="staff.html" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                Staff
+              </a>
+            </li>
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="faq.html" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                FAQs
+              </a>
+            </li>
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="apply.html" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                Apply
+              </a>
+            </li>
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="vacancies.html" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                Vacancies
+              </a>
+            </li>
+            <li class="list-none ms-lg-4 ps-lg-2 me-lg-0 me-4 mb-lg-0 mb-3">
+              <a href="privacy.html" class="transition text-decoration-none sofia fw-semibold fontX text-white">
+                Policies
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>

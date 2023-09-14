@@ -1,11 +1,50 @@
 .apply-form-sec{
     padding-top:250px;
+    @include media-breakpoint-down(lg) {
+        h1{
+            font-size:50px;
+        }
+        .apply-form{
+            .apply-input{
+                input{
+                    height:52px;
+                    padding: 0 30px;
+                }
+            }
+            textarea{
+                padding:20px 30px;
+            }
+        }
+    }
+
 }
 
 .usefull-link-sec-apply{
     padding-top:145px;   
+    @include media-breakpoint-down(lg) {
+        padding-top:95px;
+        .potential-img {
+            height: 160px;
+            margin-bottom: 20px;
+        }
+
+        .potential-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+        }
+    }
 }
 
 .insta-gallery-apply{
     padding-top:170px;
+    @include media-breakpoint-down(lg) {
+        padding-top:80px;
+    }
+}
+
+.ui-widget-header{
+    background:$danger !important;
 }

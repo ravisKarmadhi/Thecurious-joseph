@@ -1,20 +1,40 @@
-.open-news-sec{
-    padding-top:280px;
-    .single-img{
-       height:567px; 
+.open-news-sec {
+    padding-top: 280px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 200px;
+    }
+
+    .single-img {
+        height: 567px;
+
+        @include media-breakpoint-down(lg) {  
+            height: 310px;
+        }
     }
 }
 
-.blog-sec-new-open{
-    margin-top:100px;
-    padding-top:120px;
-    padding-bottom:175px;
+.blog-sec-new-open {
+    margin-top: 100px;
+    padding-top: 120px;
+    padding-bottom: 175px;
+    @include media-breakpoint-down(lg) {  
+        margin-top:75px;
+        padding-top:65px;
+        padding-bottom:75px;
+    }
 }
 
-.learn-more-sec-new-open{
-    padding-top:105px;
+.learn-more-sec-new-open {
+    padding-top: 105px;
+    @include media-breakpoint-down(lg) {  
+        padding-top:120px;
+    }
 }
 
-.insta-gallery-news-open{
-    padding-top:125px;
+.insta-gallery-news-open {
+    padding-top: 125px;
+    @include media-breakpoint-down(lg) {  
+        padding-top:100px;
+    }
 }

@@ -1,19 +1,39 @@
-.staff-title-card{
-    padding-top:200px;
-    padding-bottom:135px;
-}
+.staff-title-card {
+    padding-top: 200px;
+    padding-bottom: 135px;
 
-.news-card-sec{
-    .single-staff{
-        margin-bottom:56px;
+    @include media-breakpoint-down(lg) {
+        padding-top: 215px;
+        padding-bottom: 125px;
+
+        h3 {
+            font-size: 50px;
+        }
     }
 }
 
-.learn-more-sec-staff{
-    padding-top:110px;
-    margin-top:150px;
+.news-card-sec {
+    .single-staff {
+        margin-bottom: 56px;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+    }
 }
 
-.insta-gallery-staff{
-    padding-top:76px;  
+.learn-more-sec-staff {
+    padding-top: 110px;
+    margin-top: 150px;
+    @include media-breakpoint-down(lg) {
+        display:none;
+    }
+}
+
+.insta-gallery-staff {
+    padding-top: 76px;
+    @include media-breakpoint-down(lg) {
+        background-color:transparent !important;
+        padding-top:115px;
+    }
 }

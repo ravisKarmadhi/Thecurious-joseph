@@ -1,15 +1,32 @@
 .vacancies-sec {
-    padding-top:240px;
+    padding-top: 240px;
+
     .vacancies-card {
         padding: 82px 83px;
-        background-color:#F8F8F8;
+        background-color: #F8F8F8;
+
+        @include media-breakpoint-down(lg) {
+            padding: 55px 30px 70px 30px;
+        }
     }
 }
 
 .future-jobs {
     padding-top: 120px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 65px;
+
+        h4 {
+            font-size: 20px;
+        }
+    }
 }
 
-.insta-gallery-vacancies{
-    padding-top:120px;
+.insta-gallery-vacancies {
+    padding-top: 120px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 100px;
+    }
 }

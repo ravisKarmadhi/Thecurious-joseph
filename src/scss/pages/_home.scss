@@ -25,7 +25,10 @@
 .upcoming-tour {
     .slider-img {
         height: 567px;
+        @include media-breakpoint-down(lg) {
+            height: 250px;
 
+        }
         .layer {
             background-color: rgba(0, 0, 0, 0.40);
         }
@@ -54,9 +57,7 @@
     @include media-breakpoint-down(lg) {
         padding-top: 74px;
 
-        .slider-img {
-            height: 250px;
-        }
+
     }
 }
 
@@ -64,16 +65,26 @@
     padding-top: 100px;
     padding-bottom: 85px;
     margin-top: 80px;
+
     @include media-breakpoint-down(lg) {
-        padding-top:55px;
-        padding-bottom:55px;
+        padding-top: 55px;
+        padding-bottom: 55px;
     }
 }
 
 .insta-gallery-home {
     padding-top: 96px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 77px;
+
+    }
 }
 
 .home-page-hero {
     height: 800px;
+}
+
+.slider-blog {
+
 }

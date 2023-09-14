@@ -38,17 +38,50 @@ $(function () {
 
 // ===========================================================================
 
-// $(window).scroll(function () {
-//   var sticky = $("header"),
-//     scroll = $(window).scrollTop();
-//   if (scroll >= 50) {
-//     sticky.addClass("header-fixed");
-//   }
-//   else {
-//     sticky.removeClass("header-fixed");
-//   }
-// });
+$(window).scroll(function () {
+  var sticky = $("header"),
+    scroll = $(window).scrollTop();
+  if (scroll >= 50) {
+    sticky.addClass("header-fixed");
+  }
+  else {
+    sticky.removeClass("header-fixed");
+  }
+});
 
+
+
+$(document).ready(function () {
+  var prevScrollPos = window.pageYOffset;
+
+  $(window).scroll(function () {
+    var currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+      $("header").removeClass("hidden");
+    } else {
+      $("header").addClass("hidden");
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+});
+
+$(document).ready(function () {
+  var prevScrollPosScoll = window.pageYOffset;
+
+  $(window).scroll(function () {
+    var currentScrollPosScroll = window.pageYOffset;
+
+    if (prevScrollPosScoll > currentScrollPosScroll) {
+      $(".scroll-fixed").removeClass("d-none");
+    } else {
+      $(".scroll-fixed").addClass("d-none");
+    }
+
+    prevScrollPosScoll = currentScrollPosScroll;
+  });
+});
 
 $(document).ready(function () {
   $(".filter-button").click(function () {
@@ -135,4 +168,145 @@ $(document).ready(function () {
   $(".usefull-btn").click(function () {
     $(this).toggleClass("highlight").siblings().removeClass("highlight");
   });
+});
+
+// Function to add or remove class based on window width
+function checkWindowWidth() {
+  if ($(window).width() < 992) {
+    $('#enquiry-elements').addClass('modal-fullscreen');
+    $('#enquiry-body').addClass('rounded-0');
+  } else {
+    $('#enquiry-elements').removeClass('modal-fullscreen');
+    $('#enquiry-body').removeClass('rounded-0');
+  }
+}
+
+// Initial check when the page loads
+$(document).ready(function () {
+  checkWindowWidth();
+});
+
+// Check on window resize
+$(window).resize(function () {
+  checkWindowWidth();
+});
+
+$(function () {
+  $("#datepicker").datepicker({
+    dateFormat: 'dd/mm/yy'
+  });
+});
+
+$(document).ready(function () {
+  const $searchInput = $('#search-input');
+  const $suggestionsContainer = $('#suggestions-container');
+
+  // Sample suggestion data (you can replace this with your data)
+  const suggestions = [
+    'Early Years Curriculum',
+    'Pre - Preparatory Curriculum',
+    'Preparatory Curriculum',
+  ];
+
+  $searchInput.on('input', function () {
+    const inputValue = $(this).val().toLowerCase();
+    $suggestionsContainer.empty();
+
+    if (inputValue.length === 0) {
+      $suggestionsContainer.hide();
+      return;
+    }
+
+    const matchingSuggestions = suggestions.filter(suggestion => suggestion.toLowerCase().includes(inputValue));
+
+    if (matchingSuggestions.length > 0) {
+      matchingSuggestions.forEach(suggestion => {
+        const $suggestionItem = $('<div class="suggestion-item"></div>');
+        const suggestionHtml = suggestion.replace(new RegExp(inputValue, 'gi'), (match) => `<span class="highlight">${match}</span>`);
+        $suggestionItem.html(suggestionHtml);
+        $suggestionItem.on('click', function () {
+          $searchInput.val(suggestion);
+          $suggestionsContainer.hide();
+        });
+        $suggestionsContainer.append($suggestionItem);
+      });
+
+      $suggestionsContainer.show();
+    } else {
+      $suggestionsContainer.hide();
+    }
+  });
+
+  // Handle clicks outside the input to close the suggestions
+  $(document).on('click', function (event) {
+    if (!$(event.target).closest('#search-input, #suggestions-container').length) {
+      $suggestionsContainer.hide();
+    }
+  });
+});
+
+$(document).ready(function () {
+
+
+  function checkInputLength() {
+    var inputElement = $("#search-input");
+    var inputValue = inputElement.val();
+    var windowWidth = $(window).width();
+
+
+    if (inputValue.length <= 1) {
+      if (windowWidth < 992) {
+        $('#mobile-menu').removeClass("d-none");
+        $('#mobile-login').removeClass("d-none");
+      }
+    } else {
+      if (windowWidth < 992) {
+        $('#mobile-menu').addClass("d-none");
+        $('#mobile-login').addClass("d-none");
+      }
+    }
+  }
+
+  $(document).ready(checkInputLength);
+  $("#search-input").on('input', checkInputLength);
+
+});
+
+
+$('#menu-btn').click(function () {
+  $('#header-open').addClass("bgdanger vh-100");
+  $('#open-text').addClass("d-none");
+  $('#close-text').removeClass("d-none");
+  $('#menu-btn').addClass("d-none");
+  $('#close-btn').removeClass("d-none");
+  $('#open-menu').removeClass("d-none");
+  $('#open-menu').addClass("d-lg-flex");
+  $("html").addClass("overflow-hidden");
+  $("header").addClass("overflow-y-auto");
+  $(".scroll-fixed").addClass("d-none");
+  $(".black-logo-js").addClass("d-none");
+  $(".black-logo-js").removeClass("black-logo");
+  $(".white-logo-js").removeClass("white-logo");
+});
+
+
+$('#close-btn').click(function () {
+  $('#header-open').removeClass("bgdanger vh-100");
+  $('#open-text').removeClass("d-none");
+  $('#close-text').addClass("d-none");
+  $('#menu-btn').removeClass("d-none");
+  $('#close-btn').addClass("d-none");
+  $('#open-menu').addClass("d-none");
+  $('#open-menu').removeClass("d-lg-flex");
+  $("html").removeClass("overflow-hidden");
+  $("header").removeClass("overflow-y-auto");
+  $(".scroll-fixed").removeClass("d-none");
+  $(".black-logo-js").removeClass("d-none");
+  $(".black-logo-js").addClass("black-logo");
+  $(".white-logo-js").addClass("white-logo");
+});
+
+
+$('#close-lable').click(function () {
+  $('#academic-year').addClass("d-none");
 });
